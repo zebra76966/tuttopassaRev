@@ -1,0 +1,104 @@
+.functional-ingredients {
+  background: #fdf6ed;
+}
+
+/* === Marquee (Infinite Scrolling Text) === */
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  border-bottom: 2px solid black;
+  font-weight: bold;
+  background: #fdf6ed;
+}
+
+.track {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 20s linear infinite;
+}
+
+.track span {
+  display: inline-block;
+  padding-right: 2rem;
+  font-size: 1rem;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* === Stats === */
+.stats {
+  margin-bottom: 20px;
+}
+
+.stat-row {
+  margin-bottom: 10px;
+}
+
+.stat-row p {
+  font-size: 0.85rem;
+  font-weight: bold;
+  margin: 0 0 5px;
+}
+
+.bar-blocks {
+  display: flex;
+  gap: 6px;
+}
+
+.block {
+  width: 20%;
+  height: 12px;
+  border-radius: 4px;
+  background: #e0d6f9;
+}
+
+.block.filled {
+  background: var(--primary-color);
+}
+
+/* === Girl === */
+.girl img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* === Description === */
+
+/* === Flower Cards === */
+.flower-card {
+  border-radius: 3em !important;
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s;
+  height: 40dvh !important;
+  min-height: 400px !important;
+  border: 4px solid transparent !important;
+  background: #fdf6ed !important  ;
+}
+
+.flower-card.active {
+  border: 4px solid black !important;
+}
+
+.flower-card:hover {
+  transform: translateY(-3px);
+}
+
+.flower-img {
+  padding: 3em;
+  height: 80%;
+  object-fit: contain;
+  border-radius: 3em !important;
+}
+
+.bg-grad {
+  background: linear-gradient(180deg, #d8b6d6 0%, #8984b9 100%);
+}

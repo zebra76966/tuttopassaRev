@@ -1,0 +1,100 @@
+.loader-container {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  /* justify-content: center; */
+  align-items: center;
+  height: 100dvh;
+  width: 100dvw;
+  background-color: #1a1a1a;
+  animation: fadeOut 5s ease-in-out forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  90% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.loader {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.loader img {
+  position: absolute;
+  /* width: 100%; */
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.laoder-wrapper {
+  width: 10%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  border-bottom: 2px solid var(--warning-color);
+
+  padding-bottom: 10px;
+
+  animation: 5s fullWidth ease-in-out forwards;
+}
+
+@keyframes fullWidth {
+  0% {
+    width: 10%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.scaleAnim {
+  animation: scaleUp 3s ease-in-out infinite;
+}
+.scaleAnim.d1 {
+  animation-delay: 0s;
+  margin: 4em;
+}
+.scaleAnim.d2 {
+  animation-delay: 0.5s;
+  margin: 2em;
+}
+.scaleAnim.d3 {
+  animation-delay: 0.7s;
+  margin: 5em;
+}
+.scaleAnim.d4 {
+  animation-delay: 0.9s;
+  margin: 3em;
+}
+
+@keyframes scaleUp {
+  0% {
+    opacity: 0;
+    scale: 1;
+  }
+  50% {
+    opacity: 1;
+    scale: 1.3;
+  }
+  100% {
+    opacity: 0;
+    scale: 1;
+  }
+}
