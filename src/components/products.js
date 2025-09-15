@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import "./products.css";
+import { motion } from "framer-motion";
 
 const products = [
   {
@@ -115,10 +116,17 @@ const ProductSlider = () => {
           <div className="slider-scroll" ref={scrollRef}>
             {products.map((product, index) => (
               <div className="card-wrap" onMouseOver={() => setAltImg(index)}>
-                <div key={index} className={`slider-card ${index == altimg ? "rot" : ""}`} style={{ backgroundColor: product.color }}>
+                <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.4, delay: index / 8 }}
+                  key={index}
+                  className={`slider-card ${index == altimg ? "rot" : ""}`}
+                  style={{ backgroundColor: product.color }}
+                >
                   <img src={index == altimg ? product.imgAlt : product.img} alt={product.name} />
                   <h5 className="text-black fs-1">{product.name}</h5>
-                </div>
+                </motion.div>
               </div>
             ))}
           </div>

@@ -1,0 +1,105 @@
+.connect-section {
+  background-color: #f7f1e3; /* A light, creamy background color */
+  padding: 50px 0;
+
+  position: relative;
+  overflow: hidden; /* To contain the wavy borders */
+}
+
+.display-1-c {
+  font-size: 6em;
+}
+
+.form-input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #202020; /* A thin bottom border */
+  border-radius: 0;
+  padding: 10px 0;
+  color: #333;
+}
+
+.form-input::placeholder {
+  color: #999;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.checkbox-label .form-check-input {
+  border-color: #2c3e50;
+}
+
+.checkbox-label .form-check-input:checked {
+  background-color: #2c3e50;
+  border-color: #2c3e50;
+}
+
+.checkbox-label {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.subscribe-btn {
+  background-color: rgba(9, 179, 173, 0.5) !important; /* The greenish-blue button color */
+
+  transition: background-color 0.3s ease;
+}
+
+.subscribe-btn:hover {
+  background-color: #6daab3; /* A slightly darker color on hover */
+}
+
+.patern-top.left {
+  position: absolute;
+  left: 10%;
+  top: 0;
+  --base-transform: rotateY(180deg);
+  width: 22dvh;
+}
+
+.patern-top.right {
+  position: absolute;
+  right: 10%;
+  top: 0;
+  --base-transform: rotateY(0deg);
+  width: 22dvh;
+}
+
+.patern-bottom.left {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  --base-transform: rotateY(0deg);
+  width: 65dvh;
+}
+
+.patern-bottom.right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  --base-transform: rotateY(180deg);
+  width: 65dvh;
+}
+
+.patAnim {
+  animation: grassMovingSlow 3s ease-in-out infinite; /* slow + infinite loop */
+  transform-origin: bottom center; /* makes it sway from the base */
+}
+
+@keyframes grassMovingSlow {
+  0% {
+    transform: var(--base-transform) rotate(0deg) translateY(0);
+  }
+  25% {
+    transform: var(--base-transform) rotate(2deg) translateY(-2px);
+  }
+  50% {
+    transform: var(--base-transform) rotate(0deg) translateY(0);
+  }
+  75% {
+    transform: var(--base-transform) rotate(-2deg) translateY(-2px);
+  }
+  100% {
+    transform: var(--base-transform) rotate(0deg) translateY(0);
+  }
+}

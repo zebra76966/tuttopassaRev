@@ -1,0 +1,47 @@
+.small-text {
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.funky-text {
+  font-size: 10dvh;
+
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.funky-text .teal {
+  color: #00a3a3;
+}
+
+.funky-text .orange {
+  color: #d94d1a;
+}
+
+.funky-text .purple {
+  color: #b080d0;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+  height: 89dvh;
+}
+
+.image-container img {
+  border-radius: 8px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: auto;
+  width: 40%;
+}

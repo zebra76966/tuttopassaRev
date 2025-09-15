@@ -1,0 +1,173 @@
+.match-section {
+  background: #000;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.subtitle {
+  font-size: 1rem;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+.display-1-c1 {
+  font-size: 8dvh;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.cta-btn {
+  background-color: #f26419;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 40px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.can-img {
+  max-height: 73dvh;
+  transition: transform 0.3s ease;
+}
+.can-img.middle {
+  transform: translateY(-5%) rotate(0deg);
+}
+.can-img.left {
+  transform: translateY(-15%) rotate(-30deg);
+}
+.can-img.right {
+  transform: translateY(-15%) rotate(15deg);
+}
+
+.can-img:hover {
+  transform: scale(1.05) translateY(-18%);
+}
+
+/* Background shapes */
+
+.bg-cloud {
+  position: absolute;
+  background: url("../../public/assets/pattern/lavPat2.svg") no-repeat center/contain;
+  width: 20dvw;
+  height: 25dvh;
+  z-index: 1;
+}
+.bg-cloud.big {
+  background: url("../../public/assets/pattern/lavPat.svg") no-repeat center/contain;
+  width: 25dvw;
+  height: 30dvh;
+  z-index: 1;
+}
+
+/* .cloud-wrapper-left {
+  position: relative;
+  width: 10dvw;
+  height: 40dvh;
+  margin-right: auto;
+  overflow: hidden;
+} */
+
+.cloud-top {
+  top: 0px;
+  right: 0%;
+}
+
+.sun-wrapper {
+  position: relative;
+  width: 90dvw;
+  height: 40dvh;
+  margin-left: auto;
+  margin-right: auto;
+  /* overflow: hidden; */
+}
+
+.cloud-left {
+  top: 50px;
+  left: 0%;
+}
+
+.cloud-right {
+  top: 50px;
+  right: 0%;
+  transform: rotateY(180deg);
+}
+/* ============================= */
+.cloud-left.big {
+  bottom: 0%;
+  left: -20%;
+  transform: translateY(80%);
+}
+
+.cloud-right.big {
+  bottom: 0%;
+  right: -20%;
+  transform: rotateY(180deg) translateY(80%);
+}
+
+.bg-sun {
+  position: absolute;
+  background: url("../../public/assets/pattern/sunPat.svg") no-repeat center/contain;
+  width: 20dvw;
+  height: 25dvh;
+  z-index: 0;
+}
+
+.sun-top {
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.sun-left {
+  top: -25%;
+  left: 20%;
+}
+
+.sun-right {
+  top: -25%;
+  right: 20%;
+}
+
+.can-row {
+  position: relative;
+  z-index: 999;
+}
+/* Lavendar */
+.lavendar-pattern {
+  position: absolute;
+  left: 50%;
+  top: -3%;
+  width: 100%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lav-pat-wrapper {
+  position: relative;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.lav.left {
+  height: 31dvh;
+  width: 20dvw;
+}
+
+.lav.right {
+  height: 31dvh;
+  width: 20dvw;
+  transform: rotateY(180deg);
+}
