@@ -6,10 +6,10 @@ import { motion } from "framer-motion";
 const ConnectToOurUniverse = () => {
   return (
     <div className="connect-section ch-100 d-flex align-items-center">
-      <img src="assets/pattern/sea-weed1.svg" className="patern-top left patAnim" />
-      <img src="assets/pattern/sea-weed1.svg" className="patern-top right patAnim" />
-      <img src="assets/pattern/sea-weed2.svg" className="patern-bottom left patAnim" />
-      <img src="assets/pattern/sea-weed2.svg" className="patern-bottom right patAnim" />
+      <img src="/assets/pattern/sea-weed1.svg" className="patern-top left patAnim" />
+      <img src="/assets/pattern/sea-weed1.svg" className="patern-top right patAnim" />
+      <img src="/assets/pattern/sea-weed2.svg" className="patern-bottom left patAnim" />
+      <img src="/assets/pattern/sea-weed2.svg" className="patern-bottom right patAnim" />
 
       <motion.div
         initial={{ opacity: 0, y: 100 }}

@@ -1,0 +1,8 @@
+.prodImg {
+  position: absolute;
+  left: 0%;
+  top: 50%;
+  height: 75dvh;
+  transform: translateY(-50%);
+  overflow-x: hidden;
+}

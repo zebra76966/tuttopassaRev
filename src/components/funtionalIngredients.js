@@ -8,32 +8,32 @@ const flowers = [
   {
     id: 1,
     name: "RHODIOLA ROSEA",
-    image: "assets/pattern/flower.png",
-    girl: "assets/pattern/girl.png",
+    image: "/assets/pattern/flower.png",
+    girl: "/assets/pattern/girl.png",
     description: "A master of endurance and stress defense. Rhodiola powers you through chaos with calm strength and mental clarity.",
     stats: [4, 4, 5, 3, 5],
   },
   {
     id: 2,
     name: "GINSENG ROOT",
-    image: "assets/pattern/flower.png",
-    girl: "assets/pattern/girl2.png",
+    image: "/assets/pattern/flower.png",
+    girl: "/assets/pattern/girl2.png",
     description: "Boosts energy and focus while supporting immune health. The classic adaptogen.",
     stats: [5, 5, 3, 4, 4],
   },
   {
     id: 3,
     name: "ASHWAGANDHA",
-    image: "assets/pattern/flower.png",
-    girl: "assets/pattern/girl3.png",
+    image: "/assets/pattern/flower.png",
+    girl: "/assets/pattern/girl3.png",
     description: "Helps reduce stress and anxiety, balancing mood and building resilience.",
     stats: [3, 4, 5, 3, 5],
   },
   {
     id: 4,
     name: "MACA ROOT",
-    image: "assets/pattern/flower.png",
-    girl: "assets/pattern/girl4.png",
+    image: "/assets/pattern/flower.png",
+    girl: "/assets/pattern/girl4.png",
     description: "Supports physical recovery, stamina, and overall vitality.",
     stats: [4, 3, 4, 5, 4],
   },
@@ -94,7 +94,7 @@ const FunctionalIngredients = () => {
 
               {/* Pixel Girl */}
               <div className="col-lg-6 ">
-                <div ref={girlRef} className={`girl text-center w-100 h-100`}>
+                <div ref={girlRef} className={`girl text-center w-100 h-100 `}>
                   <div className="animationLevelUp">
                     <DotLottieReact key={selected.girl} src="https://lottie.host/0044346c-6ea4-4a63-ab1f-e1e31ea9a34c/BDKA204CX7.lottie" autoplay loop={false} />
                   </div>

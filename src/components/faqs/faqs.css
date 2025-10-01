@@ -1,0 +1,40 @@
+.faq-section {
+  background-color: #74ccd1;
+}
+
+.faq-section h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.faq-section .form-control::placeholder {
+  color: #09b3ad;
+}
+
+.faq-section .form-control {
+  color: #09b3ad;
+}
+
+.ico {
+  color: #09b3ad;
+  transition: transform 180ms ease;
+}
+
+/* ensure the question text is inline-block so vertical transform feels natural */
+.faq-question {
+  display: inline-block;
+  will-change: transform;
+}
+
+/* wrapper to give space above the underline */
+.faq-underline-wrapper {
+  width: 100%;
+  margin-top: 8px;
+  overflow: visible; /* allow the keyframe y shifts to show */
+}
+
+/* the visible "string" — use background color instead of border */
+.faq-underline {
+  display: block;
+  margin-top: 8px;
+}

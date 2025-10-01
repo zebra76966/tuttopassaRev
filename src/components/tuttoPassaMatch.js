@@ -62,9 +62,9 @@ const TuttoPassaMatch = () => {
 
           <div className="lavendar-pattern ">
             <div className="lav-pat-wrapper left">
-              <img src="assets/pattern/wavePat.svg" className="lav left" />
-              <img src="assets/pattern/waves-merge.svg" className="lav " />
-              <img src="assets/pattern/wavePat.svg" className="lav right" />
+              <img src="/assets/pattern/wavePat.svg" className="lav left" />
+              <img src="/assets/pattern/waves-merge.svg" className="lav " />
+              <img src="/assets/pattern/wavePat.svg" className="lav right" />
             </div>
           </div>
         </motion.div>

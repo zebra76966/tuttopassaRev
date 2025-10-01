@@ -1,0 +1,17 @@
+.abouthero {
+  min-height: 100dvh;
+  background: url("../../../public/assets/functionalBg.png") no-repeat center center/cover;
+}
+.aboutColorBg {
+  background: linear-gradient(180deg, #d8b6d6 0%, rgba(216, 182, 214, 0) 98.56%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100dvw;
+  height: 100dvh;
+}
+
+.about-main {
+  background-color: #fdf4e7;
+}

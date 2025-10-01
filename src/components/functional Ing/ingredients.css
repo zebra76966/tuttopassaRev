@@ -1,0 +1,156 @@
+/* === Stats === */
+.stats {
+  margin-bottom: 20px;
+}
+
+.stat-row {
+  margin-bottom: 10px;
+}
+
+.stat-row p {
+  font-size: 0.85rem;
+  font-weight: bold;
+  margin: 0 0 5px;
+}
+
+.bar-blocks {
+  display: flex;
+  gap: 6px;
+}
+
+.block {
+  width: 20%;
+  height: 12px;
+  border-radius: 4px;
+  background: #e0d6f9;
+}
+
+.block.filled {
+  background: var(--primary-color);
+}
+
+/* === Girl === */
+.girl {
+  position: relative;
+  /* overflow: hidden; */
+  width: 100%;
+  height: 100%;
+}
+.girl img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: breath 4s linear infinite;
+  transform: scale(1);
+  transform-origin: bottom;
+}
+
+@keyframes breath {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.015);
+  }
+
+  60% {
+    transform: scale(1);
+  }
+  90% {
+    transform: scale(1.015);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animationLevelUp {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) scale(1.9);
+  height: 100%;
+  width: 100%;
+  transform-origin: bottom;
+  filter: hue-rotate(105deg);
+}
+
+@keyframes levelUpShake {
+  0% {
+    transform: translate(0, 0) rotate(0);
+  }
+  20% {
+    transform: translate(-4px, 0) rotate(-3deg);
+  }
+  40% {
+    transform: translate(4px, 0) rotate(3deg);
+  }
+  60% {
+    transform: translate(-4px, 0) rotate(-3deg);
+  }
+  80% {
+    transform: translate(4px, 0) rotate(3deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0);
+  }
+}
+
+.level-up {
+  display: inline-block;
+  /* animation: levelUpShake 0.4s ease-in-out; */
+}
+
+/* === Description === */
+/* Update the main slider container */
+.slider-wrapper {
+  /* Core for horizontal scroll and centering */
+  display: flex;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  /* 💡 Essential for snapping items to the center of the viewport */
+  scroll-snap-type: x mandatory;
+
+  /* Add padding to both sides so the first/last item can center */
+  padding: 0 100px;
+  gap: 20px;
+
+  /* Hide the scrollbar but keep scrolling functionality */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.slider-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.flower-card {
+  /* 💡 Base card styling */
+  flex: 0 0 20dvw; /* Fix the width of the card */
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: 4px solid transparent;
+  opacity: 0.5; /* Reduced opacity for non-active cards */
+  transform: scale(0.9); /* Slightly shrunk non-active cards */
+
+  /* 💡 Essential for centering: make the card snap to the center when scrolling stops */
+  scroll-snap-align: center;
+}
+
+.flower-card.active {
+  /* 💡 Active card styling (Focus look) */
+  border: 4px solid black;
+  opacity: 1;
+  transform: scale(1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.slider .nav-btn {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #333; /* Adjust color */
+  cursor: pointer;
+  z-index: 10; /* Keep buttons on top of slider */
+  padding: 0 10px;
+}

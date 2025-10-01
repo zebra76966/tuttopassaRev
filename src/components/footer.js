@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Draggable from "react-draggable";
 import "./footer.css";
+import { useNavigate } from "react-router-dom";
 
 // Import your badge images (kept inside src, so import is fine)
 import badgePeaceOutThoughts from "./badges/tutto_passa_text.svg";
@@ -17,6 +18,8 @@ const FooterComponent = () => {
   const badge3Ref = useRef(null);
   const badge4Ref = useRef(null);
   const badge5Ref = useRef(null);
+
+  const navigate = useNavigate();
 
   return (
     <footer className="app-footer d-flex align-items-center px-5">
@@ -36,20 +39,26 @@ const FooterComponent = () => {
                 <p className="fs-6 mb-3">CONTACT US</p>
               </Col>
               <Col xs={4}>
-                <p className="fs-6 mb-3">FAQ</p>
+                <p className="fs-6 mb-3" onClick={() => navigate("/faqs")}>
+                  FAQ
+                </p>
                 <p className="fs-6 mb-3">ABOUT US</p>
                 <p className="fs-6 mb-3">BLOG</p>
               </Col>
               <Col xs={4}>
-                <p className="fs-6 mb-3">FUNCIONAL INGREDIENTS</p>
-                <p className="fs-6 mb-3">PRIVACY POLICY</p>
+                <p className="fs-6 mb-3" onClick={() => navigate("/functional-ingredients")}>
+                  FUNCTIONAL INGREDIENTS
+                </p>
+                <p className="fs-6 mb-3" onClick={() => navigate("/policy")}>
+                  PRIVACY POLICY
+                </p>
               </Col>
             </Row>
             <Row className="footer-bottom mt-5 pt-3 border-top">
               <Col xs={12} md={4} className="text-md-start text-center">
-                <p className="fs-6 mb-3">&copy; 2024 NEWYORK</p>
+                <p className="fs-6 mb-3">&copy; 2025 NEWYORK</p>
               </Col>
-              <Col xs={12} md={4} className="text-md-center text-center">
+              <Col xs={12} md={4} className="text-md-center text-center" onClick={() => navigate("/policy")}>
                 <p className="fs-6 mb-3">PRIVACY POLICY</p>
               </Col>
               <Col xs={12} md={4} className="text-md-end text-center">

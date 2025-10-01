@@ -52,7 +52,7 @@
 .patern-top.left {
   position: absolute;
   left: 10%;
-  top: 0;
+  top: -2%;
   --base-transform: rotateY(180deg);
   width: 22dvh;
 }
@@ -60,7 +60,7 @@
 .patern-top.right {
   position: absolute;
   right: 10%;
-  top: 0;
+  top: -2%;
   --base-transform: rotateY(0deg);
   width: 22dvh;
 }
@@ -68,7 +68,7 @@
 .patern-bottom.left {
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -2%;
   --base-transform: rotateY(0deg);
   width: 65dvh;
 }
@@ -76,7 +76,7 @@
 .patern-bottom.right {
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: -2%;
   --base-transform: rotateY(180deg);
   width: 65dvh;
 }
