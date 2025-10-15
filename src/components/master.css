@@ -55,6 +55,9 @@
 .bg-primary-color {
   background-color: var(--primary-color) !important;
 }
+.bg-light-color {
+  background-color: var(--light-color);
+}
 .bg-warning {
   background-color: var(--warning-color) !important;
 }

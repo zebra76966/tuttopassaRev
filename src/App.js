@@ -12,6 +12,10 @@ import FaqsMain from "./components/faqs/faqsMain";
 import AboutMain from "./components/about/aboutMain";
 import Error from "./components/404";
 import PrivacyPolicy from "./components/privacyPolicy/PrivacyPolicyMain";
+import BlogEditor from "./components/blogs/createBlog";
+import ProtectedBlog from "./components/blogs/adminBlog";
+import BlogList from "./components/blogs/blogsList";
+import BlogPage from "./components/blogs/readBlog";
 
 function ScrollToTop() {
   const location = useLocation();
@@ -39,7 +43,7 @@ function AppContent() {
   }, [location.pathname]);
 
   useEffect(() => {
-    if (!isLoading) {
+    if (!isLoading && location.pathname !== "/create-blog") {
       const lenis = new Lenis({
         duration: 1.2,
         easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
@@ -58,7 +62,7 @@ function AppContent() {
         lenis.destroy();
       };
     }
-  }, [isLoading]);
+  }, [isLoading, location.pathname]);
 
   return (
     <>
@@ -71,6 +75,9 @@ function AppContent() {
         <Route path="/products/:id" element={<ProductViewHero />} />
         <Route path="/faqs" element={<FaqsMain />} />
         <Route path="/about" element={<AboutMain />} />
+        <Route path="/create-blog" element={<ProtectedBlog />} />
+        <Route path="/blogs" element={<BlogList />} />
+        <Route path="/blog/:id" element={<BlogPage />} />
 
         <Route path="/policy" element={<PrivacyPolicy />} />
         <Route path="*" element={<Error />} />
