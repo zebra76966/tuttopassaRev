@@ -4,6 +4,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { FiMenu, FiX } from "react-icons/fi";
 import { LiaGripLinesSolid } from "react-icons/lia";
+import { TfiClose } from "react-icons/tfi";
 
 const CustomNavbar = () => {
   const navigate = useNavigate();
@@ -191,7 +192,7 @@ const CustomNavbar = () => {
                     cursor: "pointer",
                   }}
                 >
-                  <FiX size={60} color="#fff" />
+                  <TfiClose size={60} color="#fff" />
                 </motion.div>
               </div>
 
