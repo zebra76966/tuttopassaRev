@@ -45,3 +45,35 @@
   height: auto;
   width: 40%;
 }
+
+@media screen and (max-width: 1200px) {
+  .funky-text {
+    font-size: 9dvh;
+    font-weight: 800;
+    line-height: 1.4;
+  }
+  .smAFont.fs-4 {
+    font-size: 1.4rem !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .funky-text {
+    font-size: 4dvh;
+    font-weight: 800;
+    line-height: 1.4;
+  }
+  .smAFont.fs-4 {
+    font-size: 1rem !important;
+  }
+  .tAFont.fs-3 {
+    font-size: 1rem !important;
+    font-weight: bold;
+  }
+  .image-container {
+    position: relative;
+    display: inline-block;
+    height: 60dvh;
+    width: 100%;
+  }
+}

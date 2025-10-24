@@ -34,32 +34,35 @@ const Hero = () => {
       <div className={`heroBg2 ${isActive > 1 ? "revealAnim" : "revertAnim"}`}></div>
       <div className="heroBg3"></div> {/* Static background layer */}
       <Container fluid className="contentContainer">
-        <Row className="align-items-center">
+        <Row className="align-items-center ">
           {/* Left Side Content */}
-          <Col md={6} className="px-5 text-dark">
-            <p className={`fs-4 fw-bold ${isActive == "0" ? "revealTxt" : "d-none"}`}>LAVENDER HAZE {isActive}</p>
-            <p className={`fs-4 fw-bold ${isActive == "1" ? "revealTxt" : "d-none"}`}>PEACH SUNRISE {isActive}</p>
-            <p className={`fs-4 fw-bold ${isActive == "2" ? "revealTxt" : "d-none"}`}>TROPICAL WAVE {isActive}</p>
-            <h1 className="heroFont ">
+          <Col lg={6} className="px-5 text-dark order-lg-1 order-2 pt-lg-0 pt-5">
+            <p className={`fs-4 fw-bold smFont ${isActive == "0" ? "revealTxt" : "d-none"}`}>LAVENDER HAZE {isActive}</p>
+            <p className={`fs-4 fw-bold smFont ${isActive == "1" ? "revealTxt" : "d-none"}`}>PEACH SUNRISE {isActive}</p>
+            <p className={`fs-4 fw-bold smFont ${isActive == "2" ? "revealTxt" : "d-none"}`}>TROPICAL WAVE {isActive}</p>
+            <h1 className="heroFont tFont">
               FOR EVERY <br /> STATE OF MIND
             </h1>
-            <p className="p-font fs-5 text-uppercase">A gentle, dreamy blend designed to help you slow down and let go.</p>
-            <Button size="lg" className={` ${isActive == 0 ? "btn-primary" : isActive == 1 ? "btn-warning" : "btn-info"} rounded-pill text-dark fs-6 fw-bold px-5 py-3 mt-4 transDelay`}>
+            <p className="p-font fs-5 text-uppercase pFont">A gentle, dreamy blend designed to help you slow down and let go.</p>
+            <Button
+              size="lg"
+              className={` ${isActive == 0 ? "btn-primary" : isActive == 1 ? "btn-warning" : "btn-info"} rounded-pill text-dark fs-6 fw-bold px-lg-5 py-lg-3 px-3 py-2 mt-4 transDelay btnCta`}
+            >
               CALL TO ACTION
             </Button>
           </Col>
 
           {/* Right Side Content */}
-          <Col md={6} className="d-flex justify-content-center align-items-center position-relative ">
+          <Col lg={6} className="d-flex justify-content-center align-items-center position-relative order-lg-2 order-1">
             <div className="imgSlider">
               <div className={`slide1  ${isActive > 0 ? "revealAnim del1" : "revertAnim del2"}`}>
-                <img src="/assets/products/heroLaven.png" alt="Tutto Passa Can" className="hero-img img1" />
+                <img src="/assets/products/heroLaven.png" alt="Tutto Passa Can" className="hero-img img1 mx-lg-0 mx-auto" />
               </div>
               <div className={`slide2  ${isActive > 1 ? "revealAnim del1" : "revertAnim del2"}`}>
-                <img src="/assets/products/heroSun.png" alt="Tutto Passa Can" className="hero-img img2" />
+                <img src="/assets/products/heroSun.png" alt="Tutto Passa Can" className="hero-img img2 mx-lg-0 mx-auto" />
               </div>
               <div className={`slide3 `}>
-                <img src="/assets/products/heroWave.png" alt="Tutto Passa Can" className="hero-img img3" />
+                <img src="/assets/products/heroWave.png" alt="Tutto Passa Can" className="hero-img img3 mx-lg-0 mx-auto" />
               </div>
             </div>
             <div className="patternBox ">
@@ -121,21 +124,22 @@ const Hero = () => {
                 gap: "3rem",
                 textAlign: "center",
               }}
+              className="bottomIcons"
             >
               <div>
-                <img src="/assets/icons/heart.svg" alt="Heart Icon" style={{ height: "3.5rem", marginBottom: "0.3rem" }} />
+                <img src="/assets/icons/heart.svg" alt="Heart Icon" className="btmIco" style={{ height: "3.5rem", marginBottom: "0.3rem" }} />
                 <p className="fw-bold">
                   MIND & MOOD <br /> SUPPORT
                 </p>
               </div>
               <div>
-                <img src="/assets/icons/energy.svg" alt="Heart Icon" style={{ height: "3.5rem", marginBottom: "0.3rem" }} />
+                <img src="/assets/icons/energy.svg" alt="Heart Icon" className="btmIco" style={{ height: "3.5rem", marginBottom: "0.3rem" }} />
                 <p className="fw-bold">
                   ENERGY & <br /> RECOVERY
                 </p>
               </div>
               <div>
-                <img src="/assets/icons/balance.svg" alt="Heart Icon" style={{ height: "3.5rem", marginBottom: "0.3rem" }} />
+                <img src="/assets/icons/balance.svg" alt="Heart Icon" className="btmIco" style={{ height: "3.5rem", marginBottom: "0.3rem" }} />
                 <p className="fw-bold">
                   STRESS <br /> BALANCE
                 </p>

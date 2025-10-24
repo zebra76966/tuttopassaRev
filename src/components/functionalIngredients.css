@@ -139,7 +139,7 @@
 
 /* === Flower Cards === */
 .flower-card {
-  border-radius: 3em !important;
+  border-radius: 1.5em !important;
   cursor: pointer;
   position: relative;
   transition: 0.3s;
@@ -166,4 +166,86 @@
 
 .bg-grad {
   background: linear-gradient(180deg, #d8b6d6 0%, #8984b9 100%);
+}
+
+@media screen and (max-width: 992px) {
+  .flower-card {
+    height: 20dvh !important;
+    min-height: 300px !important;
+    border: 4px solid transparent !important;
+  }
+
+  .flower-img {
+    padding: 1em;
+    height: 80%;
+    object-fit: contain;
+    border-radius: 3em !important;
+  }
+
+  .flower-card .fs-5 {
+    font-size: 1rem !important;
+  }
+
+  .tFFont {
+    font-size: 1.5rem !important;
+  }
+  .sFFont.fs-5 {
+    font-size: 0.9rem !important;
+  }
+  .dFFont {
+    font-size: 0.8rem !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .flower-card {
+    height: 10dvh !important;
+    min-height: 200px !important;
+    border: 4px solid transparent !important;
+  }
+
+  .flower-img {
+    padding: 0.2em;
+    height: 65%;
+    object-fit: contain;
+    border-radius: 1.5em !important;
+  }
+
+  .flower-card .fs-5 {
+    font-size: 0.8rem !important;
+  }
+  .flower-card .card-body {
+    padding: 0;
+  }
+
+  .smFFont.fs-6 {
+    font-size: 0.7rem !important;
+  }
+}
+
+@media screen and (max-width: 512px) {
+  .flower-card {
+    height: 10dvh !important;
+    min-height: 150px !important;
+    border: 2px solid transparent !important;
+    border-radius: 1em !important;
+  }
+  .flower-card.active {
+    border: 2px solid black !important;
+  }
+
+  .flower-img {
+    padding: 0.2em;
+    height: 65%;
+    object-fit: contain;
+    border-radius: 1em !important;
+  }
+
+  .flower-card .fs-5 {
+    font-size: 0.8rem !important;
+  }
+  .girl img {
+    width: 100%;
+    height: 300px !important;
+  }
 }

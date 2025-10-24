@@ -171,3 +171,152 @@
   width: 20dvw;
   transform: rotateY(180deg);
 }
+
+@media screen and (max-width: 1400px) {
+  .lav.left {
+    height: 25dvh;
+    width: 20dvw;
+  }
+
+  .lav.right {
+    height: 25dvh;
+    width: 20dvw;
+    transform: rotateY(180deg);
+  }
+
+  .lav.middle {
+    height: 50dvh;
+    width: 70dvh;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .subtitle {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+  }
+  .display-1-c1 {
+    font-size: 6dvh;
+  }
+  .sun-wrapper {
+    position: relative;
+    width: 90dvw;
+    height: 32dvh;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .can-img {
+    max-height: 60dvh;
+  }
+  .lav.left {
+    height: 20dvh;
+    width: 20dvw;
+  }
+
+  .lav.right {
+    height: 20dvh;
+    width: 20dvw;
+    transform: rotateY(180deg);
+  }
+
+  .lav.middle {
+    height: 50dvh;
+    width: 65dvh;
+  }
+  .bg-cloud.big {
+    width: 23dvw;
+    height: 25dvh;
+    z-index: 1;
+  }
+}
+@media screen and (max-width: 768px) {
+  .subtitle {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+  }
+  .display-1-c1 {
+    font-size: 4dvh;
+  }
+  .sun-wrapper {
+    position: relative;
+    width: 90dvw;
+    height: 30dvh;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .can-img {
+    max-height: 50dvh;
+    transition: transform 0.3s ease;
+  }
+  .lav.left,
+  .lav.right,
+  .sun-right,
+  .sun-left,
+  .cloud-left,
+  .cloud-right {
+    display: none !important;
+  }
+
+  .lav.middle {
+    height: 50dvh;
+    width: 75dvw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sun-top {
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .bg-sun {
+    width: 35dvw;
+    height: 30dvh;
+    z-index: 0;
+  }
+}
+
+@media screen and (max-width: 512px) {
+  .subtitle {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+  }
+  .display-1-c1 {
+    font-size: 3dvh;
+  }
+
+  .can-img {
+    max-height: 25dvh;
+    transition: transform 0.3s ease;
+  }
+
+  .lav.middle {
+    height: 20dvh;
+    width: 75dvw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sun-wrapper {
+    width: 90dvw;
+    height: 20dvh;
+  }
+
+  .sun-top {
+    top: -45%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .bg-sun {
+    width: 45dvw;
+    height: 40dvh;
+    z-index: 0;
+  }
+  .match-section {
+    min-height: 80vh;
+  }
+}

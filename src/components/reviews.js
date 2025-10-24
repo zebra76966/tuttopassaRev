@@ -48,11 +48,11 @@ export default function ReviewSlider({ autoPlayInterval = 3000 }) {
             <div className="review-inner">
               <div className="stars" aria-hidden>
                 {Array.from({ length: 5 }).map((_, k) => (
-                  <FaStar key={k} style={{ color: "currentColor" }} size={50} />
+                  <FaStar key={k} style={{ color: "currentColor" }} size={50} className="star" />
                 ))}
               </div>
 
-              <p className="review-text fs-3 py-5">“{r.text}”</p>
+              <p className="review-text fs-3 py-lg-5 py-3">“{r.text}”</p>
 
               <p className="review-author fs-5">– {r.author}</p>
             </div>

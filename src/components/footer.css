@@ -93,3 +93,107 @@
 .footer-bottom p {
   margin-bottom: 0;
 }
+
+@media screen and (max-width: 1440px) {
+  .badge-peace,
+  .badge-mushroom,
+  .badge-blue-creature,
+  .badge-purple-creature,
+  .badge-tutto-passa-text {
+    width: 160px;
+
+    transform: translate(-10px, 0);
+  }
+  /* .badge-peace {
+    width: 210px;
+
+    transform: translate(-10px, 0);
+  }
+
+  .badge-mushroom {
+    width: 210px;
+    top: 60px;
+    right: 20px;
+  }
+
+  .badge-blue-creature {
+    width: 210px;
+    top: 200px;
+    left: 0px;
+  }
+
+  .badge-purple-creature {
+    width: 210px;
+    top: 250px;
+    left: 150px;
+  }
+
+  .badge-tutto-passa-text {
+    width: 170px;
+    top: 290px;
+    right: 20px;
+    filter: invert(1);
+  } */
+
+  .tFoFONT.display-5 {
+    font-size: 2.5em !important;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .badge-peace,
+  .badge-mushroom,
+  .badge-blue-creature,
+  .badge-purple-creature,
+  .badge-tutto-passa-text {
+    width: 140px;
+
+    transform: translate(-10px, 0);
+  }
+  .tFoFONT.display-5 {
+    font-size: 2em !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .footer-badges-area {
+    position: relative;
+    min-height: 100%;
+    background-color: #000000;
+
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  .badge-peace,
+  .badge-mushroom,
+  .badge-blue-creature,
+  .badge-purple-creature,
+  .badge-tutto-passa-text {
+    width: 130px;
+
+    transform: translate(-10px, 0);
+  }
+
+  .tFoFONT.display-5 {
+    font-size: 1.8em !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer-badges-area {
+    position: relative;
+    height: 100%;
+    min-height: 500px;
+    background-color: #000000;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+
+  .tFoFONT.display-5 {
+    font-size: 1.5em !important;
+  }
+}

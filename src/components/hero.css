@@ -290,3 +290,80 @@
 .transDelay {
   transition: all 2s ease-in-out !important;
 }
+
+@media only screen and (max-width: 1790px) {
+  .imgSlider {
+    height: 75dvh;
+    width: 100%;
+  }
+  .tFont {
+    font-size: 7dvh !important;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .imgSlider {
+    height: 65dvh;
+    width: 100%;
+  }
+  .tFont {
+    font-size: 6dvh !important;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .imgSlider {
+    height: 50dvh;
+    width: 100%;
+  }
+  .tFont {
+    font-size: 5dvh !important;
+  }
+  .pFont.fs-5 {
+    font-size: 1rem !important;
+  }
+  .smFont.fs-4 {
+    font-size: 0.9rem !important;
+  }
+  /* .hero {
+    min-height: 80dvh !important;
+  } */
+
+  .bottomIcons {
+    bottom: -6em !important;
+  }
+  .btmIco {
+    height: 2.5rem !important;
+  }
+  .bottomIcons p {
+    font-size: 0.8em !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .bottomIcons {
+    bottom: -1.5em !important;
+  }
+  .hero-img {
+    height: 90%;
+  }
+  .slide1,
+  .slide2,
+  .slide3 {
+    left: 23% !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .bottomIcons {
+    bottom: -1.5em !important;
+  }
+  .hero-img {
+    height: 90%;
+  }
+  .slide1,
+  .slide2,
+  .slide3 {
+    left: 1% !important;
+  }
+}

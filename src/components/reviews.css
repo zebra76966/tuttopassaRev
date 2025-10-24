@@ -88,3 +88,18 @@
   background-color: currentColor !important;
   transform: scale(2);
 }
+
+@media screen and (max-width: 512px) {
+  .stars {
+    gap: 0.5em !important;
+  }
+  .star {
+    width: 25px !important;
+  }
+  .review-text.fs-3 {
+    font-size: 1em !important;
+  }
+  .review-author.fs-5 {
+    font-size: 0.8em !important;
+  }
+}

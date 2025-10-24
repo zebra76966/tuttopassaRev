@@ -176,7 +176,7 @@ const ProductSlider = ({ heading, subhead, type }) => {
       {/* Header row */}
 
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.4 }} className="product-slider w-100">
-        <Row className="justify-content-between align-items-center mb-4 px-5">
+        <Row className="justify-content-between align-items-center mb-4 px-lg-5 px-1">
           <Col xs="auto">
             <h6 className="fw-bold fs-3 p-font"> {heading ? heading : "OUR PRODUCTS"} </h6>
           </Col>
@@ -187,7 +187,7 @@ const ProductSlider = ({ heading, subhead, type }) => {
 
         {/* Slider row */}
         <div className="slider-wrapper">
-          <Button variant="link" className="arrow-btn left" onClick={() => scroll("left")}>
+          <Button variant="link" className="arrow-btn left d-lg-block d-none" onClick={() => scroll("left")}>
             <FaArrowLeft size={28} className="lnk-primary" />
           </Button>
 
@@ -225,7 +225,7 @@ const ProductSlider = ({ heading, subhead, type }) => {
                 ))}
           </div>
 
-          <Button variant="link" className="arrow-btn right " onClick={() => scroll("right")}>
+          <Button variant="link" className="arrow-btn right d-lg-block d-none" onClick={() => scroll("right")}>
             <FaArrowRight size={28} className="lnk-primary" />
           </Button>
         </div>

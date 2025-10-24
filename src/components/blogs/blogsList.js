@@ -38,10 +38,40 @@ export default function BlogList() {
     <div className="ch-100 align-items-center py-5 px-lg-5" style={{ background: "#f7f1e3" }}>
       <Container fluid className="py-5 px-lg-5 px-2 mt-5">
         <Row className="g-4 pt-5 mt-5">
-          {blogs.length === 0 && <p>No blogs found.</p>}
+          {blogs.length === 0 && (
+            <>
+              <p className="text-center display-6">No blogs yet. :(</p>
+              <div className="d-flex gap-2 justify-content-center">
+                <motion.img
+                  initial={{ opacity: 0, y: 100 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 1, delay: 0.5, repeat: Infinity, repeatType: "reverse" }}
+                  src={badges[0]}
+                  height={300}
+                  className="filterAnim p-2"
+                />
+                <motion.img
+                  initial={{ opacity: 0, y: 100 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 1, delay: 1, repeat: Infinity, repeatType: "reverse" }}
+                  src={badges[1]}
+                  height={300}
+                  className="filterAnim p-2"
+                />
+                <motion.img
+                  initial={{ opacity: 0, y: 100 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 1, delay: 1.5, repeat: Infinity, repeatType: "reverse" }}
+                  src={badges[2]}
+                  height={300}
+                  className="filterAnim p-2"
+                />
+              </div>
+            </>
+          )}
 
           {blogs.map((blog, i) => (
-            <Col key={blog.id} xs={12} md={6} lg={i == 0 ? 8 : 4}>
+            <Col key={blog.id} xs={12} md={6} lg={i % 5 == 0 ? 8 : 4}>
               <Link to={`/blog/${blog.id}`} style={{ textDecoration: "none", color: "inherit" }}>
                 <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.5 }}>
                   <Card style={{ cursor: "pointer" }} className="h-100 border-0 bg-none">

@@ -103,3 +103,74 @@
     transform: var(--base-transform) rotate(0deg) translateY(0);
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .patern-top.left,
+  .patern-top.right {
+    width: 18dvh;
+  }
+  .patern-bottom.right,
+  .patern-bottom.left {
+    width: 45dvh;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .connect-section .display-1-c {
+    font-size: 4em;
+  }
+  .dCFont.fs-4 {
+    font-size: 1rem !important;
+  }
+  .dCFont.fs-5 {
+    font-size: 0.9rem !important;
+  }
+  .patern-top.left,
+  .patern-top.right {
+    width: 18dvh;
+  }
+  .patern-bottom.right,
+  .patern-bottom.left {
+    width: 40dvh;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .connect-section .display-1-c {
+    font-size: 3em;
+  }
+  .dCFont.fs-4 {
+    font-size: 1rem !important;
+  }
+  .dCFont.fs-5 {
+    font-size: 0.9rem !important;
+  }
+  .patern-top.left,
+  .patern-top.right {
+    width: 15dvh;
+  }
+  .patern-bottom.right,
+  .patern-bottom.left {
+    width: 26dvh;
+  }
+}
+
+@media screen and (max-width: 512px) {
+  .connect-section .display-1-c {
+    font-size: 2.5em;
+  }
+  .dCFont.fs-4 {
+    font-size: 0.8rem !important;
+  }
+  .dCFont.fs-5 {
+    font-size: 0.9rem !important;
+  }
+  .patern-top.left,
+  .patern-top.right {
+    width: 15dvh;
+  }
+  .patern-bottom.right,
+  .patern-bottom.left {
+    width: 22dvh;
+  }
+}

@@ -35,7 +35,7 @@ const TuttoPassaMatch = () => {
         <h1 className="display-1-c1">
           ANSWER & DISCOVER YOUR <br /> TUTTO PASSA MATCH.
         </h1>
-        <Button variant="warning" size="lg" className="rounded-pill  px-5 py-3 fw-bold fs-6 my-4">
+        <Button variant="warning" size="lg" className="rounded-pill px-3 py-2  px-lg-5 py-lg-3 fw-bold fs-6 my-4">
           <span className="p-font py-5 px-5 "> LET’S GO! </span>
         </Button>
 
@@ -48,13 +48,13 @@ const TuttoPassaMatch = () => {
         >
           <div className="container">
             <Row className="justify-content-center mt-5 can-row">
-              <Col xs={12} md={4} className="d-flex justify-content-center">
+              <Col xs={4} className="d-flex justify-content-center">
                 <img src="/assets/products/heroLaven.png" alt="Lavender Mask" className="can-img left" />
               </Col>
-              <Col xs={12} md={4} className="d-flex justify-content-center">
+              <Col xs={4} className="d-flex justify-content-center">
                 <img src="/assets/products/wave.png" alt="Tropical Wave" className="can-img middle" />
               </Col>
-              <Col xs={12} md={4} className="d-flex justify-content-center">
+              <Col xs={4} className="d-flex justify-content-center">
                 <img src="/assets/products/heroSun.png" alt="Peach Breeze" className="can-img right" />
               </Col>
             </Row>
@@ -63,7 +63,7 @@ const TuttoPassaMatch = () => {
           <div className="lavendar-pattern ">
             <div className="lav-pat-wrapper left">
               <img src="/assets/pattern/wavePat.svg" className="lav left" />
-              <img src="/assets/pattern/waves-merge.svg" className="lav " />
+              <img src="/assets/pattern/waves-merge.svg" className="lav middle" />
               <img src="/assets/pattern/wavePat.svg" className="lav right" />
             </div>
           </div>

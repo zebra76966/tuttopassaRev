@@ -8,35 +8,38 @@ const AboutSection = () => {
     <div className="about-section bg-black text-white  ch-100">
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.4 }} className="container-fluid">
         <div className="d-flex align-items-center justify-content-between mb-4">
-          <h6 className="p-font fs-3">ABOUT US</h6> <h6 className="p-font fs-3"> MORE →</h6>
+          <h6 className="p-font fs-3 tAFont">ABOUT US</h6> <h6 className="p-font fs-3 d-lg-inline d-none"> MORE →</h6>
         </div>
         <Row className="align-items-start">
           {/* Left funky heading */}
 
-          <Col md={4} className="mb-4 mb-md-0">
+          <Col lg={4} className="mb-4 mb-md-0">
             <h2 className="funky-text">
-              FROM THE <br />
-              <span className="txt-info">WISDOM</span> OF <br />
-              <span className="txt-warning">NATURE</span> <br />
-              TO THE <br />
-              <span className="txt-primary">RHYTHM</span> OF <br />
+              FROM THE <span className="d-lg-block"></span>
+              <span className="txt-info">WISDOM</span> OF
+              <span className="d-lg-block"> </span>
+              <span className="txt-warning">NATURE</span> <span className="d-lg-block"></span>
+              TO THE <span className="d-lg-block"></span>
+              <span className="txt-primary">RHYTHM</span> OF <span className="d-lg-block"></span>
               NOW
             </h2>
           </Col>
 
           {/* Middle paragraph */}
-          <Col md={4} className="mb-4 mb-md-0">
-            <p className="fs-4">
+          <Col lg={4} className="mb-4 mb-md-0">
+            <p className="fs-4 smAFont">
               FROM THE WISDOM OF NATURE WE CREATED TUTTO PASSA WITH ONE CLEAR MISSION: TO OFFER FUNCTIONAL DRINKS THAT HELP YOU FEEL BETTER IN YOUR MIND, BODY, AND SOUL – WITHOUT SACRIFICING TASTE,
               ENERGY, OR TRUTH.
             </p>
-            <p className="fs-4">
+            <p className="fs-4 smAFont">
               BECAUSE LIFE MOVES FAST. AND IN A WORLD FULL OF NOISE, PRESSURE, AND BURNOUT, WE BELIEVE YOUR DRINK SHOULD DO MORE THAN JUST HYDRATE – IT SHOULD SUPPORT YOU IN EVERY STATE OF MIND.
             </p>
+
+            <h6 className="p-font fs-3 tAFont fw-bold d-lg-none d-block text-end"> MORE →</h6>
           </Col>
 
           {/* Right image */}
-          <Col md={4} className="text-center position-relative">
+          <Col lg={4} className="text-center position-relative">
             <div className="image-container">
               <img
                 src="/assets/about.gif" // replace with your image

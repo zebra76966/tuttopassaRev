@@ -121,3 +121,9 @@ p {
     visibility: visible;
   }
 }
+
+@media only screen and (max-width: 992px) {
+  .nav-logo img {
+    height: 90px !important;
+  }
+}
