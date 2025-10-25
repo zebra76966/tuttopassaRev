@@ -212,14 +212,14 @@
 /* ==========================Pattern Animation 2 */
 
 .inner.dropAnim1.forw {
-  animation: translateDrop1 2s ease-in-out forwards;
-  animation-delay: 1s;
+  animation: translateDrop1 1s ease-in-out forwards;
+  animation-delay: 0.2s;
   transform: translateY(0%);
 }
 
 .inner.dropAnim1.rev {
-  animation: translateDropRev 2s ease-in-out forwards;
-  animation-delay: 1s;
+  animation: translateDropRev 1.5s ease-in-out forwards;
+  animation-delay: 0.3s;
 
   transform: translateY(-200%);
 }
@@ -234,8 +234,8 @@
 }
 
 .inner.dropAnim2.forw {
-  animation: translateDrop2 2s ease-out forwards;
-  animation-delay: 1s;
+  animation: translateDrop2 1s ease-out forwards;
+  animation-delay: 0.2s;
   transform: translateY(-100%);
 }
 
