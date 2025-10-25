@@ -68,16 +68,16 @@ const Hero = () => {
             <div className="patternBox ">
               <div className={`inner set1 ${isActive == 0 ? "activePat" : "inactivePat"}  ${isActive == 1 && "dropAnim1"} ${isActive == 2 && "dropAnim2"} ${isForward ? "forw" : "rev"}  `}>
                 <div className="d-flex gap-4 innerBox1 justify-content-center">
-                  <img src="assets/pattern/lavpat.svg" alt="Pattern 1" className="pattern pattern1" />
-                  <img src="assets/pattern/lavpat.svg" alt="Pattern 1" className="pattern pattern1" />
+                  <img src="/assets/pattern/lavpat.svg" alt="Pattern 1" className="pattern pattern1" />
+                  <img src="/assets/pattern/lavpat.svg" alt="Pattern 1" className="pattern pattern1" />
                 </div>
                 <div className="d-flex gap-4 innerBox2 justify-content-center">
-                  <img src="assets/pattern/lavpat2.svg" alt="Pattern 1" className="pattern pattern2" />
-                  <img src="assets/pattern/lavpat2.svg" alt="Pattern 1" className="pattern pattern2" />
+                  <img src="/assets/pattern/lavpat2.svg" alt="Pattern 1" className="pattern pattern2" />
+                  <img src="/assets/pattern/lavpat2.svg" alt="Pattern 1" className="pattern pattern2" />
                 </div>
                 <div className="d-flex gap-4 innerBox3 justify-content-center">
-                  <img src="assets/pattern/lavpat.svg" alt="Pattern 1" className="pattern pattern3" />
-                  <img src="assets/pattern/lavpat.svg" alt="Pattern 1" className="pattern pattern3" />
+                  <img src="/assets/pattern/lavpat.svg" alt="Pattern 1" className="pattern pattern3" />
+                  <img src="/assets/pattern/lavpat.svg" alt="Pattern 1" className="pattern pattern3" />
                 </div>
               </div>
 
