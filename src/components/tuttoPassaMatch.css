@@ -3,7 +3,7 @@
   color: #fff;
   position: relative;
   overflow: hidden;
-  min-height: 100vh;
+  min-height: 100dvh;
 }
 
 .subtitle {
@@ -324,6 +324,6 @@
     z-index: 0;
   }
   .match-section {
-    min-height: 80vh;
+    min-height: 80dvh;
   }
 }
