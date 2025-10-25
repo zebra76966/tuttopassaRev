@@ -176,7 +176,7 @@ const ProductSlider = ({ heading, subhead, type }) => {
       {/* Header row */}
 
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.4 }} className="product-slider w-100">
-        <Row className="justify-content-between align-items-center mb-4 px-lg-5 px-1 d-lg-block d-none">
+        <Row className="justify-content-between align-items-center mb-4 px-lg-5 px-1 d-lg-flex d-none">
           <Col xs="auto">
             <h6 className="fw-bold fs-3 p-font"> {heading ? heading : "OUR PRODUCTS"} </h6>
           </Col>
