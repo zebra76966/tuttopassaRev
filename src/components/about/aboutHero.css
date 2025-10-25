@@ -15,3 +15,28 @@
 .about-main {
   background-color: #fdf4e7;
 }
+
+@media screen and (max-width: 1200px) {
+  .tAFont {
+    font-size: 7dvw;
+  }
+  .dAFont.fs-5 {
+    font-size: 1rem !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .dAFont.fs-5 {
+    font-size: 0.8rem !important;
+  }
+  .tACFont.fs-1 {
+    font-size: 1.5rem !important;
+  }
+  .dACFont.lead {
+    font-size: 1rem !important;
+  }
+  .imgAbout {
+    height: 40dvh !important;
+    object-fit: cover !important;
+  }
+}

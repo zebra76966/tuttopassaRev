@@ -28,7 +28,7 @@ export default function BlogList() {
 
   if (loading) {
     return (
-      <div className="text-center mt-5">
+      <div className="text-center mt-5 ch-100">
         <Spinner animation="border" />
       </div>
     );
@@ -41,7 +41,7 @@ export default function BlogList() {
           {blogs.length === 0 && (
             <>
               <p className="text-center display-6">No blogs yet. :(</p>
-              <div className="d-flex gap-2 justify-content-center">
+              <div className="d-flex gap-2 justify-content-center ">
                 <motion.img
                   initial={{ opacity: 0, y: 100 }}
                   animate={{ opacity: 1, y: 0 }}

@@ -39,7 +39,9 @@ const FooterComponent = () => {
             </h2>
             <Row className="footer-links mt-4 py-md-5 py-3 ">
               <Col md={4}>
-                <p className="fs-6 mb-3">OUR PRODUCTS</p>
+                <p className="fs-6 mb-3" onClick={() => navigate("/products")}>
+                  OUR PRODUCTS
+                </p>
                 <p className="fs-6 mb-3">FIND US</p>
                 <p className="fs-6 mb-3">CONTACT US</p>
               </Col>
@@ -47,8 +49,12 @@ const FooterComponent = () => {
                 <p className="fs-6 mb-3" onClick={() => navigate("/faqs")}>
                   FAQ
                 </p>
-                <p className="fs-6 mb-3">ABOUT US</p>
-                <p className="fs-6 mb-3">BLOG</p>
+                <p className="fs-6 mb-3" onClick={() => navigate("/about")}>
+                  ABOUT US
+                </p>
+                <p className="fs-6 mb-3" onClick={() => navigate("/blogs")}>
+                  BLOG
+                </p>
               </Col>
               <Col md={4}>
                 <p className="fs-6 mb-3" onClick={() => navigate("/functional-ingredients")}>
@@ -63,7 +69,7 @@ const FooterComponent = () => {
               <Col xs={12} md={4} className="text-md-start text-start">
                 <p className="fs-6 mb-3">&copy; 2025 NEWYORK</p>
               </Col>
-              <Col xs={12} md={4} className="text-md-center text-start" onClick={() => navigate("/policy")}>
+              <Col xs={12} md={4} className="text-md-center text-start" onClick={() => navigate("/policy")} style={{ cursor: "pointer" }}>
                 <p className="fs-6 mb-3">PRIVACY POLICY</p>
               </Col>
               <Col xs={12} md={4} className="text-md-end text-start">

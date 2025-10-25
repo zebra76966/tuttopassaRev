@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const PrivacyPolicy = () => {
   return (
     <div style={{ background: "#D8B6D6" }} className="py-5">
-      <Container className="text-uppercase my-5 py-5">
+      <Container className="text-uppercase my-5 py-lg-5 py-0">
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.4 }} className="my-5 py-5">
           <h4 className="fs-1 fw-bold p-font">Privacy Policy</h4>
 

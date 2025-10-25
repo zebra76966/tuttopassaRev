@@ -107,3 +107,56 @@
   margin-bottom: 10px;
   text-transform: uppercase;
 }
+@media screen and (max-width: 1400px) {
+  .flip-card-front,
+  .flip-card-back,
+  .pattern-card,
+  .cardImg {
+    border-radius: 1.2em !important;
+  }
+  .flip-card .card-title {
+    border-radius: 0 0 0.4em 0.4em !important;
+  }
+
+  .dFCFont.fs-5 {
+    font-size: 1.2rem !important;
+  }
+  .tFCFont.fs-4 {
+    font-size: 1.4rem !important;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .flip-card .card-title {
+    border-radius: 0 0 0.4em 0.4em !important;
+  }
+
+  .dFCFont.fs-5 {
+    font-size: 1.1rem !important;
+  }
+  .tFCFont.fs-4 {
+    font-size: 1.2rem !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .flip-card {
+    min-height: 60dvh;
+  }
+  .flip-card-front,
+  .flip-card-back,
+  .pattern-card,
+  .cardImg {
+    border-radius: 1em !important;
+  }
+  .flip-card .card-title {
+    border-radius: 0 0 0.2em 0.2em !important;
+  }
+
+  .dFCFont.fs-5 {
+    font-size: 0.9rem !important;
+  }
+  .tFCFont.fs-4 {
+    font-size: 1.2rem !important;
+  }
+}

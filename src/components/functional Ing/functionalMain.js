@@ -5,13 +5,21 @@ import FunctionalHero from "./functionalHero";
 import FunctionalCardSec from "./functionalCards";
 import Ingredients from "./ingredients";
 import ConnectToOurUniverse from "../contact";
+import FunctionalIngredients from "../funtionalIngredients";
 
 const FunctionalMain = () => {
   return (
     <div className="functional-main">
       <FunctionalHero />
       <FunctionalCardSec />
-      <Ingredients />
+
+      <div className="d-none d-lg-block">
+        <Ingredients />
+      </div>
+      <div className="d-block d-lg-none">
+        <FunctionalIngredients />
+      </div>
+
       <ConnectToOurUniverse />
     </div>
   );

@@ -15,3 +15,12 @@
 .functional-main {
   background-color: #fdf4e7;
 }
+
+@media screen and (max-width: 1200px) {
+  .tFMFont {
+    font-size: 7dvw !important;
+  }
+  .dFMFont.fs-5 {
+    font-size: 1rem !important;
+  }
+}

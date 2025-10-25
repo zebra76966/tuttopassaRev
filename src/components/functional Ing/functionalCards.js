@@ -6,8 +6,8 @@ const FunctionalCardSec = () => {
   return (
     <section className="ch-100 d-flex align-items-center position-relative justify-content-center" style={{ overflowX: "hidden" }}>
       <Container className="text-center" style={{ zIndex: 10 }}>
-        <Row className="justify-content-center">
-          <Col md={5} className="mb-4 px-md-5 px-3">
+        <Row className="justify-content-center py-lg-0 py-4">
+          <Col lg={5} md={6} className="mb-4 px-xl-5 px-3">
             <div className="flip-card ">
               <div className="flip-card-inner ">
                 {/* Front */}
@@ -21,8 +21,8 @@ const FunctionalCardSec = () => {
                 {/* Back */}
                 <div className="flip-card-back d-flex  justify-content-center">
                   <div className="info-text p-3">
-                    <h6 className="p-font fs-4 mb-4 fw-bold">For Balance, Energy & Stress Resilience</h6>
-                    <p className="lead fs-5 ">
+                    <h6 className="p-font fs-4 mb-4 fw-bold tFCFont">For Balance, Energy & Stress Resilience</h6>
+                    <p className="lead fs-5 dFCFont">
                       A master of endurance and stress defense. Rhodiadaptogens help your body adapt to stress, regulate energy levels, and restore internal balance. <br /> Think of them as gentle
                       allies that support you through highs, lows, and everything in between. They power you through chaos with calm strength and mental clarity.
                     </p>
@@ -31,7 +31,7 @@ const FunctionalCardSec = () => {
               </div>
             </div>
           </Col>
-          <Col md={5} className="mb-4 px-md-5 px-3">
+          <Col lg={5} md={6} className="mb-4 px-xl-5 px-3">
             <div className="flip-card ">
               <div className="flip-card-inner ">
                 {/* Front */}
@@ -45,8 +45,8 @@ const FunctionalCardSec = () => {
                 {/* Back */}
                 <div className="flip-card-back d-flex  justify-content-center">
                   <div className="info-text p-3">
-                    <h6 className="p-font fs-4 mb-4 fw-bold">For Balance, Energy & Stress Resilience</h6>
-                    <p className="lead fs-5 ">
+                    <h6 className="p-font fs-4 mb-4 fw-bold tFCFont">For Balance, Energy & Stress Resilience</h6>
+                    <p className="lead fs-5 dFCFont ">
                       A master of endurance and stress defense. Rhodiadaptogens help your body adapt to stress, regulate energy levels, and restore internal balance. <br /> Think of them as gentle
                       allies that support you through highs, lows, and everything in between. They power you through chaos with calm strength and mental clarity.
                     </p>
