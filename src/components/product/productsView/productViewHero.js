@@ -104,11 +104,11 @@ const ProductViewHero = () => {
         style={{ bottom: "-8%", left: "50%", transform: "translateX(-50%)", zIndex: "999" }}
       >
         {id == 0 ? (
-          <img src="/assets/pattern/lavpat.svg" alt="Pattern 1" className="pattern pattern1" />
+          <img src="/assets/pattern/lavPat.svg" alt="Pattern 1" className="pattern pattern1" />
         ) : id == 1 ? (
           <img src="/assets/pattern/sunPat.svg" alt="Pattern 1" className="pattern pattern1" />
         ) : (
-          <img src="/assets/pattern/wavepat.svg" alt="Pattern 1" className="pattern pattern1" />
+          <img src="/assets/pattern/wavepPat.svg" alt="Pattern 1" className="pattern pattern1" />
         )}
       </motion.div>
     </section>
