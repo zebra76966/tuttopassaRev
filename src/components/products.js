@@ -176,14 +176,16 @@ const ProductSlider = ({ heading, subhead, type }) => {
       {/* Header row */}
 
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.4 }} className="product-slider w-100">
-        <Row className="justify-content-between align-items-center mb-4 px-lg-5 px-1">
+        <Row className="justify-content-between align-items-center mb-4 px-lg-5 px-1 d-lg-block d-none">
           <Col xs="auto">
             <h6 className="fw-bold fs-3 p-font"> {heading ? heading : "OUR PRODUCTS"} </h6>
           </Col>
           <Col xs="auto">
-            <h6 className="fw-bold fs-3 p-font">{subhead == "NO" ? "" : "WHERE TO BUY?"}</h6>
+            <h6 className="fw-bold fs-3 p-font ">{subhead == "NO" ? "" : "WHERE TO BUY?"}</h6>
           </Col>
         </Row>
+
+        <h6 className="fw-bold fs-3 p-font text-lg-start text-center text-center d-lg-none d-block"> {heading ? heading : "OUR PRODUCTS"} </h6>
 
         {/* Slider row */}
         <div className="slider-wrapper">
@@ -229,6 +231,10 @@ const ProductSlider = ({ heading, subhead, type }) => {
             <FaArrowRight size={28} className="lnk-primary" />
           </Button>
         </div>
+
+        <Col xs="auto">
+          <h6 className="fw-bold fs-3 p-font text-center d-lg-none d-block pt-3">{subhead == "NO" ? "" : "WHERE TO BUY?"}</h6>
+        </Col>
       </motion.div>
     </Container>
   );

@@ -7,6 +7,17 @@
   overflow-x: hidden;
 }
 
+.heroBg1Color {
+  background-color: #d9b3d9;
+}
+.heroBg2Color {
+  background-color: #f4a467;
+}
+
+.heroBg3Color {
+  background-color: #74ccd1;
+}
+
 @media screen and (max-width: 1400px) {
   .tVFont {
     font-size: 4dvw !important;

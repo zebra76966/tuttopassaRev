@@ -39,8 +39,7 @@ const ProductViewHero = () => {
   ];
 
   return (
-    <section className="hero d-flex align-items-center position-relative pt-lg-0 pt-5" style={{ overflow: "hidden" }}>
-      <div className={`${id == 0 ? "heroBg1" : id == 1 ? "heroBg2" : "heroBg3"} `}></div> {/* Static background layer */}
+    <section className={`hero d-flex align-items-center position-relative pt-lg-0 pt-5 ${id == 0 ? "heroBg1Color" : id == 1 ? "heroBg2Color" : "heroBg3Color"} `} style={{ overflow: "hidden" }}>
       <Container fluid className="contentContainer py-5">
         <Row className="align-items-center py-5">
           {/* Left Side Content */}
@@ -59,7 +58,7 @@ const ProductViewHero = () => {
                 })}
               </div>
 
-              <div className="d-flex gap-3 align-items-center mt-5">
+              <div className="d-md-flex gap-3 align-items-center mt-5">
                 <Button
                   size="lg"
                   className={` ${id == 0 ? "btn-primary" : id == 1 ? "btn-warning" : "btn-info"} p-font pCta rounded-pill text-center text-dark fs-6 fw-bold px-5 py-2  transDelay`}
@@ -68,14 +67,14 @@ const ProductViewHero = () => {
                   FUNCTIONAL <br /> INGREDIENTS
                 </Button>
 
-                <Button className="border-0 bg-transparent text-dark fw-bold  fs-5 d-flex gap-3 align-items-center">
+                <Button className="border-0 bg-transparent text-dark fw-bold  fs-5 d-flex gap-3 align-items-center mt-3 mt-md-0">
                   WHERE TO FIND US <HiArrowLongRight className="fs-1 fw-bold" />
                 </Button>
               </div>
             </div>
 
-            <div className="  p-4 d-block d-lg-none w-100 mt-5 py-5" style={{ backgroundColor: prods[id]?.color }}>
-              <p className="lead smdVFont fw-bold text-uppercase">
+            <div className="  p-4 d-block d-lg-none w-100 my-5 py-5" style={{ backgroundColor: prods[id]?.color }}>
+              <p className="lead smdVFont fw-bold text-uppercase ">
                 “I’ve ditched my usual coffee jitters for Peach Sunrise. It keeps me sharp without feeling edgy, and honestly, the flavor is incredible. It just makes me feel good.”
               </p>
             </div>
@@ -101,7 +100,7 @@ const ProductViewHero = () => {
         whileInView={{ opacity: 1, y: -20 }}
         transition={{ duration: 0.5, delay: 0.4 }}
         className="position-absolute btmPattern"
-        style={{ bottom: "-8%", left: "50%", transform: "translateX(-50%)", zIndex: "999" }}
+        style={{ bottom: "-6%", left: "50%", transform: "translateX(-50%)", zIndex: "999" }}
       >
         {id == 0 ? (
           <img src="/assets/pattern/lavPat.svg" alt="Pattern 1" className="pattern pattern1" />
