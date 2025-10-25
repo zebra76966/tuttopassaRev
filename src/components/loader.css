@@ -98,3 +98,28 @@
     scale: 1;
   }
 }
+
+@media screen and (max-width: 992px) {
+  .badgeS {
+    height: 100px !important ;
+    width: 100px !important ;
+  }
+  .loader {
+    height: 150px !important ;
+    width: 150px !important ;
+  }
+}
+
+@media screen and (max-width: 512px) {
+  .badgeS {
+    height: 70px !important ;
+    width: 70px !important ;
+  }
+  .loader {
+    height: 100px !important ;
+    width: 100px !important ;
+  }
+  .loadtxt.fs-4 {
+    font-size: 4dvw !important ;
+  }
+}
