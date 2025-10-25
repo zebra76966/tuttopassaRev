@@ -277,6 +277,13 @@
     height: 30dvh;
     z-index: 0;
   }
+
+  .match-section {
+    overflow: inherit;
+  }
+  .can-row-p {
+    overflow: hidden;
+  }
 }
 
 @media screen and (max-width: 512px) {

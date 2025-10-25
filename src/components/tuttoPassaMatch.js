@@ -46,7 +46,7 @@ const TuttoPassaMatch = () => {
           transition={{ type: "spring", stiffness: 1000, damping: 100, delay: 0.2, duration: 0.5 }}
           className="position-relative w-100"
         >
-          <div className="container">
+          <div className="container can-row-p">
             <Row className="justify-content-center mt-5 can-row">
               <Col xs={4} className="d-flex justify-content-center">
                 <img src="/assets/products/heroLaven.png" alt="Lavender Mask" className="can-img left" />
