@@ -31,7 +31,7 @@ const FooterComponent = () => {
       <Container fluid className="px-xxl-5 px-3">
         <Row>
           <Col md={7} className="footer-left-content pt-md-0 pt-5">
-            <h5 className="p-font mb-4 text-white fs-3">HELLO THERE</h5>
+            <h5 className="p-font mb-4 text-white fs-4">HELLO THERE</h5>
             <h2 className="p-font display-5 tFoFONT fw-bolder">
               WELCOME TO THE
               <br />
