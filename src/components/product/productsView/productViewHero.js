@@ -90,7 +90,7 @@ const ProductViewHero = () => {
           </Col>
         </Row>
       </Container>
-      <div className="reviewBox position-absolute pb-5 bottom-0 end-0  me-5 p-4 d-none d-lg-inline" style={{ backgroundColor: prods[id]?.color, zIndex: "999", maxWidth: "30dvw", minHeight: "30dvh" }}>
+      <div className="reviewBox position-absolute pb-5 bottom-0 end-0  me-5 p-4 d-none d-lg-inline" style={{ backgroundColor: prods[id]?.color, zIndex: "999", maxWidth: "30dvw", minHeight: "30vh" }}>
         <p className="lead smdVFont">
           “I’ve ditched my usual coffee jitters for Peach Sunrise. It keeps me sharp without feeling edgy, and honestly, the flavor is incredible. It just makes me feel good.”
         </p>

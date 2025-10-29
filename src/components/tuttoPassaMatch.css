@@ -3,7 +3,7 @@
   color: #fff;
   position: relative;
   overflow: hidden;
-  min-height: 100dvh;
+  min-height: 100vh;
 }
 
 .subtitle {
@@ -12,7 +12,7 @@
   margin-bottom: 10px;
 }
 .display-1-c1 {
-  font-size: 8dvh;
+  font-size: 8vh;
 }
 
 .title {
@@ -33,7 +33,7 @@
 }
 
 .can-img {
-  max-height: 73dvh;
+  max-height: 73vh;
   transition: transform 0.3s ease;
 }
 .can-img.middle {
@@ -56,20 +56,20 @@
   position: absolute;
   background: url("../../public/assets/pattern/lavPat2.svg") no-repeat center/contain;
   width: 20dvw;
-  height: 25dvh;
+  height: 25vh;
   z-index: 1;
 }
 .bg-cloud.big {
   background: url("../../public/assets/pattern/lavPat.svg") no-repeat center/contain;
   width: 25dvw;
-  height: 30dvh;
+  height: 30vh;
   z-index: 1;
 }
 
 /* .cloud-wrapper-left {
   position: relative;
   width: 10dvw;
-  height: 40dvh;
+  height: 40vh;
   margin-right: auto;
   overflow: hidden;
 } */
@@ -82,7 +82,7 @@
 .sun-wrapper {
   position: relative;
   width: 90dvw;
-  height: 40dvh;
+  height: 40vh;
   margin-left: auto;
   margin-right: auto;
   /* overflow: hidden; */
@@ -115,7 +115,7 @@
   position: absolute;
   background: url("../../public/assets/pattern/sunPat.svg") no-repeat center/contain;
   width: 20dvw;
-  height: 25dvh;
+  height: 25vh;
   z-index: 0;
 }
 
@@ -162,31 +162,31 @@
 }
 
 .lav.left {
-  height: 31dvh;
+  height: 31vh;
   width: 20dvw;
 }
 
 .lav.right {
-  height: 31dvh;
+  height: 31vh;
   width: 20dvw;
   transform: rotateY(180deg);
 }
 
 @media screen and (max-width: 1400px) {
   .lav.left {
-    height: 25dvh;
+    height: 25vh;
     width: 20dvw;
   }
 
   .lav.right {
-    height: 25dvh;
+    height: 25vh;
     width: 20dvw;
     transform: rotateY(180deg);
   }
 
   .lav.middle {
-    height: 50dvh;
-    width: 70dvh;
+    height: 50vh;
+    width: 70vh;
   }
 }
 
@@ -197,37 +197,37 @@
     margin-bottom: 8px;
   }
   .display-1-c1 {
-    font-size: 6dvh;
+    font-size: 6vh;
   }
   .sun-wrapper {
     position: relative;
     width: 90dvw;
-    height: 32dvh;
+    height: 32vh;
     margin-left: auto;
     margin-right: auto;
   }
 
   .can-img {
-    max-height: 60dvh;
+    max-height: 60vh;
   }
   .lav.left {
-    height: 20dvh;
+    height: 20vh;
     width: 20dvw;
   }
 
   .lav.right {
-    height: 20dvh;
+    height: 20vh;
     width: 20dvw;
     transform: rotateY(180deg);
   }
 
   .lav.middle {
-    height: 50dvh;
-    width: 65dvh;
+    height: 50vh;
+    width: 65vh;
   }
   .bg-cloud.big {
     width: 23dvw;
-    height: 25dvh;
+    height: 25vh;
     z-index: 1;
   }
 }
@@ -238,17 +238,17 @@
     margin-bottom: 8px;
   }
   .display-1-c1 {
-    font-size: 4dvh;
+    font-size: 4vh;
   }
   .sun-wrapper {
     position: relative;
     width: 90dvw;
-    height: 30dvh;
+    height: 30vh;
     margin-left: auto;
     margin-right: auto;
   }
   .can-img {
-    max-height: 50dvh;
+    max-height: 50vh;
     transition: transform 0.3s ease;
   }
   .lav.left,
@@ -261,7 +261,7 @@
   }
 
   .lav.middle {
-    height: 50dvh;
+    height: 50vh;
     width: 75dvw;
     margin-left: auto;
     margin-right: auto;
@@ -274,7 +274,7 @@
   }
   .bg-sun {
     width: 35dvw;
-    height: 30dvh;
+    height: 30vh;
     z-index: 0;
   }
 
@@ -293,16 +293,16 @@
     margin-bottom: 8px;
   }
   .display-1-c1 {
-    font-size: 3dvh;
+    font-size: 3vh;
   }
 
   .can-img {
-    max-height: 25dvh;
+    max-height: 25vh;
     transition: transform 0.3s ease;
   }
 
   .lav.middle {
-    height: 20dvh;
+    height: 20vh;
     width: 75dvw;
     margin-left: auto;
     margin-right: auto;
@@ -310,7 +310,7 @@
 
   .sun-wrapper {
     width: 90dvw;
-    height: 20dvh;
+    height: 20vh;
   }
 
   .sun-top {
@@ -320,10 +320,10 @@
   }
   .bg-sun {
     width: 45dvw;
-    height: 40dvh;
+    height: 40vh;
     z-index: 0;
   }
   .match-section {
-    min-height: 80dvh;
+    min-height: 80vh;
   }
 }

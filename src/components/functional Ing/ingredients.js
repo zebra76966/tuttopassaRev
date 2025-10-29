@@ -200,7 +200,7 @@ const Ingredients = () => {
                     className="level-up-img"
                     animate={triggerMotion ? { scale: [1, 1.1, 1], opacity: [1, 0.9, 1] } : {}}
                     transition={{ duration: 0.4 }}
-                    style={{ overflowY: "hidden", height: "50dvh" }}
+                    style={{ overflowY: "hidden", height: "50vh" }}
                   />
                 </div>
               </div>
@@ -209,7 +209,7 @@ const Ingredients = () => {
 
           <Col md={5} className="text-center my-4">
             <motion.div key={selected.girl} initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }} className="description text-start">
-              <img src={selected.image} alt={selected.name} className="mb-3" style={{ height: "auto", maxHeight: "20dvh" }} />
+              <img src={selected.image} alt={selected.name} className="mb-3" style={{ height: "auto", maxHeight: "20vh" }} />
 
               <h3 className="p-font fw-bold display-6 mb-2">{selected.name}</h3>
               <h6 className="p-font fs-5 mb-4 fw-bold">THE RESILIENT FIGHTER</h6>

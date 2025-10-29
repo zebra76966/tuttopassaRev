@@ -16,13 +16,13 @@ const AboutContent = () => {
           </p>
         </Col>
         <Col lg={6} className="order-lg-2 order-1 mb-4 mb-lg-0">
-          <img src="/assets/aboutPeople.png" style={{ height: "70dvh", objectFit: "contain" }} className="w-100 imgAbout" />
+          <img src="/assets/aboutPeople.png" style={{ height: "70vh", objectFit: "contain" }} className="w-100 imgAbout" />
         </Col>
       </Row>
 
       <Row className="align-items-center px-lg-5 px-2 mb-5  text-uppercase">
         <Col lg={6} className="mb-4 mb-lg-0">
-          <img src="/assets/aboutPeople.png" style={{ height: "70dvh", objectFit: "contain" }} className="w-100 imgAbout" />
+          <img src="/assets/aboutPeople.png" style={{ height: "70vh", objectFit: "contain" }} className="w-100 imgAbout" />
         </Col>
         <Col lg={6}>
           <h5 className="fs-1 p-font tACFont" style={{ fontWeight: "1000" }}>
@@ -48,7 +48,7 @@ const AboutContent = () => {
           </p>
         </Col>
         <Col lg={6} className="order-lg-2 order-1 mb-4 mb-lg-0">
-          <img src="/assets/aboutPeople.png" style={{ height: "70dvh", objectFit: "contain" }} className="w-100 imgAbout" />
+          <img src="/assets/aboutPeople.png" style={{ height: "70vh", objectFit: "contain" }} className="w-100 imgAbout" />
         </Col>
       </Row>
     </Container>

@@ -264,7 +264,7 @@ const CustomNavbar = () => {
                           navigate(item === "PRODUCT" ? "/products" : item === "ABOUT" ? "/about" : item === "FAQ" ? "/faqs" : item === "BLOG" ? "/blogs" : "/functional-ingredients");
                         }}
                         style={{
-                          fontSize: "3dvh",
+                          fontSize: "3vh",
 
                           margin: "1rem 0",
                           cursor: "pointer",
@@ -283,7 +283,7 @@ const CustomNavbar = () => {
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.9 }}
-                    style={{ height: "20dvh", marginBottom: "2rem" }}
+                    style={{ height: "20vh", marginBottom: "2rem" }}
                   />
                 </motion.div>
               )}
@@ -397,7 +397,7 @@ const CustomNavbar = () => {
                       navigate(item === "PRODUCT" ? "/products" : item === "ABOUT" ? "/about" : item === "FAQ" ? "/faqs" : item === "BLOG" ? "/blogs" : "/functional-ingredients");
                     }}
                     style={{
-                      fontSize: "3dvh",
+                      fontSize: "3vh",
 
                       margin: "1rem 0",
                       cursor: "pointer",
@@ -416,7 +416,7 @@ const CustomNavbar = () => {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.9 }}
-                style={{ height: "20dvh", marginBottom: "2rem" }}
+                style={{ height: "20vh", marginBottom: "2rem" }}
               />
             </motion.div>
           )}

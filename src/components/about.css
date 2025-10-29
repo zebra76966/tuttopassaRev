@@ -6,7 +6,7 @@
 }
 
 .funky-text {
-  font-size: 10dvh;
+  font-size: 10vh;
 
   font-weight: 800;
   line-height: 1.4;
@@ -27,7 +27,7 @@
 .image-container {
   position: relative;
   display: inline-block;
-  height: 89dvh;
+  height: 89vh;
 }
 
 .image-container img {
@@ -48,7 +48,7 @@
 
 @media screen and (max-width: 1200px) {
   .funky-text {
-    font-size: 9dvh;
+    font-size: 9vh;
     font-weight: 800;
     line-height: 1.4;
   }
@@ -59,7 +59,7 @@
 
 @media screen and (max-width: 992px) {
   .funky-text {
-    font-size: 4dvh;
+    font-size: 4vh;
     font-weight: 800;
     line-height: 1.4;
   }
@@ -73,7 +73,7 @@
   .image-container {
     position: relative;
     display: inline-block;
-    height: 60dvh;
+    height: 60vh;
     width: 100%;
   }
 }

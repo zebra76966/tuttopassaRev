@@ -143,7 +143,7 @@
   cursor: pointer;
   position: relative;
   transition: 0.3s;
-  height: 40dvh !important;
+  height: 40vh !important;
   min-height: 400px !important;
   border: 4px solid transparent !important;
   background: #fdf4e7 !important  ;
@@ -170,7 +170,7 @@
 
 @media screen and (max-width: 992px) {
   .flower-card {
-    height: 20dvh !important;
+    height: 20vh !important;
     min-height: 300px !important;
     border: 4px solid transparent !important;
     border-radius: 1.5em !important;
@@ -200,7 +200,7 @@
 
 @media screen and (max-width: 768px) {
   .flower-card {
-    height: 10dvh !important;
+    height: 10vh !important;
     min-height: 200px !important;
     border: 4px solid transparent !important;
   }
@@ -226,7 +226,7 @@
 
 @media screen and (max-width: 512px) {
   .flower-card {
-    height: 10dvh !important;
+    height: 10vh !important;
     min-height: 150px !important;
     border: 2px solid transparent !important;
     border-radius: 1em !important;

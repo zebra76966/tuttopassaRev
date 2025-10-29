@@ -1,5 +1,5 @@
 .errorhero {
-  min-height: 100dvh;
+  min-height: 100vh;
   background: url("../../public/assets/functionalBg.png") no-repeat center center/cover;
 }
 .errorColorBg {
@@ -9,5 +9,5 @@
   left: 0;
   z-index: 3;
   width: 100dvw;
-  height: 100dvh;
+  height: 100vh;
 }

@@ -1,14 +1,14 @@
 .heroSlides {
   position: relative;
   width: 100dvw;
-  height: 300dvh; /* for 3 slides */
+  height: 300vh; /* for 3 slides */
   overflow: visible;
 }
 
 .slidesContainer {
   position: sticky;
   top: 0;
-  height: 100dvh;
+  height: 100vh;
   width: 100dvw;
   overflow: hidden;
 }
@@ -22,7 +22,7 @@
   top: 0;
   left: 0;
   width: 100dvw;
-  height: 100dvh;
+  height: 100vh;
   overflow: clip;
   will-change: width;
   transition: width 0.1s linear;
@@ -52,7 +52,7 @@
 
 /* .heroSlides {
   position: relative;
-  height: 100dvh;
+  height: 100vh;
   width: 99dvw;
   overflow: hidden !important;
 }
@@ -104,7 +104,7 @@
 
 .imgSlider {
   z-index: 2;
-  height: 75dvh;
+  height: 75vh;
   position: relative;
   width: 80%;
   animation: float 2s ease-in-out infinite;
@@ -215,7 +215,7 @@
   left: 0;
   z-index: 3;
   width: 100dvw;
-  min-height: 100dvh;
+  min-height: 100vh;
 }
 
 .heroBg2 {
@@ -225,7 +225,7 @@
   left: 0;
   z-index: 2;
   width: 100dvw;
-  min-height: 100dvh;
+  min-height: 100vh;
 }
 
 .heroBg3 {
@@ -235,7 +235,7 @@
   left: 0;
   z-index: 1;
   width: 100dvw;
-  min-height: 100dvh;
+  min-height: 100vh;
 }
 
 .revealAnim {
@@ -397,32 +397,32 @@
 
 @media only screen and (max-width: 1790px) {
   .imgSlider {
-    height: 75dvh;
+    height: 75vh;
     max-height: 770px;
     width: 100%;
   }
   .tFont {
-    font-size: 7dvh !important;
+    font-size: 7vh !important;
   }
 }
 
 @media only screen and (max-width: 1280px) {
   .imgSlider {
-    height: 65dvh;
+    height: 65vh;
     width: 100%;
   }
   .tFont {
-    font-size: 6dvh !important;
+    font-size: 6vh !important;
   }
 }
 
 @media only screen and (max-width: 1080px) {
   .imgSlider {
-    height: 50dvh;
+    height: 50vh;
     width: 100%;
   }
   .tFont {
-    font-size: 5dvh !important;
+    font-size: 5vh !important;
   }
   .pFont.fs-5 {
     font-size: 1rem !important;
@@ -431,7 +431,7 @@
     font-size: 0.9rem !important;
   }
   /* .hero {
-    min-height: 80dvh !important;
+    min-height: 80vh !important;
   } */
 
   .bottomIcons {

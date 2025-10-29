@@ -54,7 +54,7 @@
   left: 10%;
   top: -2%;
   --base-transform: rotateY(180deg);
-  width: 22dvh;
+  width: 22vh;
 }
 
 .patern-top.right {
@@ -62,7 +62,7 @@
   right: 10%;
   top: -2%;
   --base-transform: rotateY(0deg);
-  width: 22dvh;
+  width: 22vh;
 }
 
 .patern-bottom.left {
@@ -70,7 +70,7 @@
   left: 0;
   bottom: -2%;
   --base-transform: rotateY(0deg);
-  width: 65dvh;
+  width: 65vh;
 }
 
 .patern-bottom.right {
@@ -78,7 +78,7 @@
   right: 0;
   bottom: -2%;
   --base-transform: rotateY(180deg);
-  width: 65dvh;
+  width: 65vh;
 }
 
 .patAnim {
@@ -107,11 +107,11 @@
 @media screen and (max-width: 1200px) {
   .patern-top.left,
   .patern-top.right {
-    width: 18dvh;
+    width: 18vh;
   }
   .patern-bottom.right,
   .patern-bottom.left {
-    width: 45dvh;
+    width: 45vh;
   }
 }
 
@@ -127,11 +127,11 @@
   }
   .patern-top.left,
   .patern-top.right {
-    width: 18dvh;
+    width: 18vh;
   }
   .patern-bottom.right,
   .patern-bottom.left {
-    width: 40dvh;
+    width: 40vh;
   }
 }
 
@@ -147,11 +147,11 @@
   }
   .patern-top.left,
   .patern-top.right {
-    width: 15dvh;
+    width: 15vh;
   }
   .patern-bottom.right,
   .patern-bottom.left {
-    width: 26dvh;
+    width: 26vh;
   }
 }
 
@@ -167,10 +167,10 @@
   }
   .patern-top.left,
   .patern-top.right {
-    width: 15dvh;
+    width: 15vh;
   }
   .patern-bottom.right,
   .patern-bottom.left {
-    width: 22dvh;
+    width: 22vh;
   }
 }

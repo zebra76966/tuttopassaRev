@@ -23,11 +23,11 @@
 }
 
 .ch-100 {
-  min-height: 100dvh;
+  min-height: 100vh;
 }
 
 .hero {
-  min-height: 100dvh;
+  min-height: 100vh;
   background-color: #d9b3d9;
 }
 
@@ -95,7 +95,7 @@ h6,
   font-family: "cleo";
 }
 .heroFont {
-  font-size: 10dvh;
+  font-size: 10vh;
 }
 
 .p-font,

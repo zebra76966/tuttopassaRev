@@ -1,6 +1,6 @@
 /* .imgSlider {
   z-index: 2;
-  height: 75dvh;
+  height: 75vh;
   position: relative;
   width: 80%;
   animation: float 2s ease-in-out infinite;
@@ -111,7 +111,7 @@
   left: 0;
   z-index: 3;
   width: 100dvw;
-  min-height: 100dvh;
+  min-height: 100vh;
 }
 
 .heroBg2 {
@@ -121,7 +121,7 @@
   left: 0;
   z-index: 2;
   width: 100dvw;
-  min-height: 100dvh;
+  min-height: 100vh;
 }
 
 .heroBg3 {
@@ -131,7 +131,7 @@
   left: 0;
   z-index: 1;
   width: 100dvw;
-  min-height: 100dvh;
+  min-height: 100vh;
 }
 
 .revealAnim {
@@ -254,31 +254,31 @@
 
 @media only screen and (max-width: 1790px) {
   .imgSlider {
-    height: 75dvh;
+    height: 75vh;
     width: 100%;
   }
   .tFont {
-    font-size: 7dvh !important;
+    font-size: 7vh !important;
   }
 }
 
 @media only screen and (max-width: 1280px) {
   .imgSlider {
-    height: 65dvh;
+    height: 65vh;
     width: 100%;
   }
   .tFont {
-    font-size: 6dvh !important;
+    font-size: 6vh !important;
   }
 }
 
 @media only screen and (max-width: 1080px) {
   .imgSlider {
-    height: 50dvh;
+    height: 50vh;
     width: 100%;
   }
   .tFont {
-    font-size: 5dvh !important;
+    font-size: 5vh !important;
   }
   .pFont.fs-5 {
     font-size: 1rem !important;
