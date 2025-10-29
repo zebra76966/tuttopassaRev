@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { NavLink, useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
@@ -12,6 +12,9 @@ const CustomNavbar = () => {
   const progressTimer = useRef(null);
   const [progress, setProgress] = useState(0);
   const [holding, setHolding] = useState(false);
+
+  const [showDesktopNav, setShowDesktopNav] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
 
   const HOLD_DURATION = 1000; // 1 second
 
@@ -52,73 +55,252 @@ const CustomNavbar = () => {
 
   const [menuOpen, setMenuOpen] = useState(false);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      const isDesktop = window.innerWidth >= 992; // Bootstrap lg breakpoint
+
+      if (isDesktop) {
+        if (currentScrollY > 1200) {
+          // Once user has scrolled past 100px, hide the desktop nav
+          setShowDesktopNav(false);
+        } else {
+          // Only show when the user is near the very top
+          setShowDesktopNav(true);
+        }
+      }
+
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <>
-      <Navbar expand="lg" className="d-lg-inline d-none custom-navbar position-absolute top-0 start-0 w-100 px-4 p-font fw-bold" style={{ zIndex: 1000 }}>
-        <Container fluid className="d-flex justify-content-between align-items-center">
-          {/* Left side links */}
-          <Nav className="nav-left gap-5">
-            <Nav.Link as={NavLink} to="/products">
-              PRODUCT
-            </Nav.Link>
-            <Nav.Link as={NavLink} to="/about">
-              ABOUT
-            </Nav.Link>
-            <Nav.Link as={NavLink} to="/faqs">
-              FAQ
-            </Nav.Link>
-          </Nav>
+      <AnimatePresence>
+        {showDesktopNav && (
+          <motion.div
+            key="desktop-navbar"
+            initial={{ y: -100, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            exit={{ y: -100, opacity: 0 }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+            className="d-lg-inline d-none w-100 position-fixed top-0 start-0"
+            style={{ zIndex: 1000 }}
+          >
+            <Navbar expand="lg" className="custom-navbar p-font fw-bold px-4">
+              <Container fluid className="d-flex justify-content-between align-items-center">
+                {/* Left side links */}
+                <Nav className="nav-left gap-5">
+                  <Nav.Link as={NavLink} to="/products">
+                    PRODUCT
+                  </Nav.Link>
+                  <Nav.Link as={NavLink} to="/about">
+                    ABOUT
+                  </Nav.Link>
+                  <Nav.Link as={NavLink} to="/faqs">
+                    FAQ
+                  </Nav.Link>
+                </Nav>
 
-          {/* Center logo */}
-          <div className="nav-logo">
-            <img src="/logo_tutto.svg" alt="Tutto Passa" style={{ height: "120px", cursor: "pointer" }} onClick={() => navigate("/")} />
-          </div>
+                {/* Center logo */}
+                <div className="nav-logo">
+                  <img src="/logo_tutto.svg" alt="Tutto Passa" style={{ height: "120px", cursor: "pointer" }} onClick={() => navigate("/")} />
+                </div>
 
-          {/* Right side link */}
-          <Nav className="nav-right gap-5">
-            <div
-              className="position-relative d-inline-block"
-              onMouseDown={handleMouseDown}
-              onMouseUp={handleMouseUp}
-              onMouseLeave={handleMouseLeave}
-              onTouchStart={handleTouchStart}
-              onTouchEnd={handleTouchEnd}
-              style={{ cursor: "pointer", userSelect: "none" }}
+                {/* Right side link */}
+                <Nav className="nav-right gap-5">
+                  <div
+                    className="position-relative d-inline-block"
+                    onMouseDown={handleMouseDown}
+                    onMouseUp={handleMouseUp}
+                    onMouseLeave={handleMouseLeave}
+                    onTouchStart={handleTouchStart}
+                    onTouchEnd={handleTouchEnd}
+                    style={{ cursor: "pointer", userSelect: "none" }}
+                  >
+                    <span style={{ position: "relative", zIndex: 2, top: "20%" }}>BLOG</span>
+
+                    {/* Progress bar only visible while holding */}
+                    {holding && (
+                      <div
+                        style={{
+                          position: "absolute",
+                          bottom: "-2px",
+                          left: 0,
+                          height: "3px",
+                          width: `${progress}%`,
+                          backgroundColor: "#000",
+                          borderRadius: "2px",
+                          opacity: holding ? 1 : 0,
+                          transition: holding ? "width 0s linear, opacity 0.2s ease" : "opacity 0.3s ease, width 0s ease 0.3s",
+                        }}
+                      />
+                    )}
+                  </div>
+
+                  <Nav.Link as={NavLink} to="/functional-ingredients">
+                    FUNCTIONAL INGREDIENTS
+                  </Nav.Link>
+                </Nav>
+              </Container>
+            </Navbar>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {!showDesktopNav && window.innerWidth >= 992 && (
+        <motion.div
+          key="mini-navbar"
+          initial={{ y: -100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          exit={{ y: -100, opacity: 0 }}
+          transition={{ duration: 0.5, ease: "easeInOut" }}
+          className="position-fixed top-0 start-0 w-100 d-none d-lg-block "
+          style={{ zIndex: 1000, filter: "invert(1)", mixBlendMode: "difference" }}
+        >
+          <div className="d-inline">
+            <Navbar
+              expand="lg"
+              className="custom-navbar position-absolute top-0 start-0 w-100 px-4 py-3 d-flex justify-content-between align-items-center"
+              style={{
+                background: "transparent",
+                zIndex: 1000,
+              }}
             >
-              <span style={{ position: "relative", zIndex: 2, top: "20%" }}>BLOG</span>
+              {/* Logo */}
+              <div className="logo" style={{ cursor: "pointer" }} onClick={() => navigate("/")}>
+                <img src="/logo_tutto.svg" alt="Tutto Passa" style={{ height: "60px" }} />
+              </div>
 
-              {/* Progress bar only visible while holding */}
-              {holding && (
-                <div
+              {/* Hamburger / Close icon */}
+              <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)} style={{ cursor: "pointer", zIndex: 1100 }}>
+                {menuOpen ? <LiaGripLinesSolid size={28} color="#000" /> : <LiaGripLinesSolid size={40} color="#000" />}
+              </div>
+            </Navbar>
+
+            {/* Slide-out overlay menu */}
+            <AnimatePresence>
+              {menuOpen && (
+                <motion.div
+                  key="menu"
+                  initial={{ x: "100%" }}
+                  animate={{ x: 0 }}
+                  exit={{ x: "100%" }}
+                  transition={{ type: "tween", duration: 0.5 }}
+                  className="menu-overlay"
                   style={{
-                    position: "absolute",
-                    bottom: "-2px",
-                    left: 0,
-                    height: "3px",
-                    width: `${progress}%`,
+                    position: "fixed",
+                    top: 0,
+                    right: 0,
+                    width: "100%",
+                    height: "100vh",
                     backgroundColor: "#000",
-                    borderRadius: "2px",
-                    opacity: holding ? 1 : 0,
-                    transition: holding ? "width 0s linear, opacity 0.2s ease" : "opacity 0.3s ease, width 0s ease 0.3s",
+                    color: "#fff",
+                    zIndex: 1050,
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "flex-start",
+                    alignItems: "center",
                   }}
-                />
-              )}
-            </div>
+                >
+                  {/* Mobile header (logo + close icon) */}
+                  <div
+                    className="mobileHeader d-flex align-items-center justify-content-between w-100 px-4 py-3"
+                    style={{
+                      position: "absolute",
+                      top: 0,
+                      left: 0,
+                      right: 0,
+                    }}
+                  >
+                    <motion.img
+                      src="/logo_tutto.svg"
+                      alt="Logo"
+                      initial={{ opacity: 0, y: -20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ delay: 0.5 }}
+                      style={{
+                        filter: "invert(1)",
+                        height: "80px",
+                        cursor: "pointer",
+                      }}
+                      onClick={() => {
+                        setMenuOpen(false);
+                        navigate("/");
+                      }}
+                    />
+                    <motion.div
+                      initial={{ opacity: 0, rotate: -90 }}
+                      animate={{ opacity: 1, rotate: 0 }}
+                      transition={{ delay: 0.5 }}
+                      onClick={() => setMenuOpen(false)}
+                      style={{
+                        cursor: "pointer",
+                      }}
+                    >
+                      <TfiClose size={60} color="#fff" />
+                    </motion.div>
+                  </div>
 
-            <Nav.Link as={NavLink} to="/functional-ingredients">
-              FUNCTIONAL INGREDIENTS
-            </Nav.Link>
-          </Nav>
-        </Container>
-      </Navbar>
+                  {/* Menu items */}
+                  <div
+                    className="menu-items d-flex flex-column align-items-center justify-content-center flex-grow-1"
+                    style={{
+                      marginTop: "120px",
+                    }}
+                  >
+                    {["PRODUCT", "ABOUT", "FAQ", "BLOG", "FUNCTIONAL INGREDIENTS"].map((item, i) => (
+                      <motion.div
+                        key={item}
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.3 + i * 0.1 }}
+                        className="menu-item p-font text-center fw-bolder"
+                        onClick={() => {
+                          setMenuOpen(false);
+                          navigate(item === "PRODUCT" ? "/products" : item === "ABOUT" ? "/about" : item === "FAQ" ? "/faqs" : item === "BLOG" ? "/blogs" : "/functional-ingredients");
+                        }}
+                        style={{
+                          fontSize: "3dvh",
+
+                          margin: "1rem 0",
+                          cursor: "pointer",
+                          letterSpacing: "1px",
+                        }}
+                      >
+                        {item}
+                      </motion.div>
+                    ))}
+                  </div>
+
+                  {/* Footer graphic */}
+                  <motion.img
+                    src="/assets/icons/badge (3).svg"
+                    alt="Universe"
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.9 }}
+                    style={{ height: "20dvh", marginBottom: "2rem" }}
+                  />
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </div>
+        </motion.div>
+      )}
 
       <div className="d-lg-none d-inline">
         <Navbar
           expand="lg"
-          className="custom-navbar position-absolute top-0 start-0 w-100 px-4 py-3 d-flex justify-content-between align-items-center"
+          className="custom-navbar position-fixed top-0 start-0  w-100 px-4 py-3 d-flex justify-content-between align-items-center"
           style={{
             background: "transparent",
             zIndex: 1000,
+            filter: "invert(1)",
+            mixBlendMode: "difference",
           }}
         >
           {/* Logo */}
