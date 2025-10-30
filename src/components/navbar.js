@@ -159,7 +159,7 @@ const CustomNavbar = () => {
           exit={{ y: -100, opacity: 0 }}
           transition={{ duration: 0.5, ease: "easeInOut" }}
           className="position-fixed top-0 start-0 w-100 d-none d-lg-block "
-          style={{ zIndex: 1000, filter: "invert(1)", mixBlendMode: "difference" }}
+          style={{ zIndex: 1000, filter: !menuOpen ? "invert(1)" : "", mixBlendMode: !menuOpen ? "difference" : "" }}
         >
           <div className="d-inline">
             <Navbar
