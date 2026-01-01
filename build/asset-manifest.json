@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e67162db.css",
+    "main.js": "/static/js/main.48c69e52.js",
+    "static/js/453.3dfd749f.chunk.js": "/static/js/453.3dfd749f.chunk.js",
+    "static/media/functionalBg.png": "/static/media/functionalBg.ead901754809e8abed52.png",
+    "static/media/LexendExa-Regular.ttf": "/static/media/LexendExa-Regular.20afe24962b36da27b9c.ttf",
+    "static/media/cleo.ttf": "/static/media/cleo.ed919d61c859ef349b7a.ttf",
+    "static/media/creature_purple.svg": "/static/media/creature_purple.ef4745486e749a251873697845544872.svg",
+    "static/media/tutto_passa_universe.svg": "/static/media/tutto_passa_universe.13d97b07c43302589827ef3cfb8f1109.svg",
+    "static/media/creature_blue.svg": "/static/media/creature_blue.b3c67a66bd5875aaadb5bdd99076286c.svg",
+    "static/media/tutto_passa_text.svg": "/static/media/tutto_passa_text.ec704c03db65aca18cbbd68c16987831.svg",
+    "static/media/sunPat.svg": "/static/media/sunPat.a7b5026fd4838af327c6.svg",
+    "static/media/logo_tutto.svg": "/static/media/logo_tutto.b30ae227c697063c0a6b1d7770bd9989.svg",
+    "static/media/lavPat2.svg": "/static/media/lavPat2.49168b4db305ba7a1d1a.svg",
+    "static/media/lavPat.svg": "/static/media/lavPat.75afbddf128f63e409a2.svg",
+    "index.html": "/index.html",
+    "static/media/align-center.svg": "/static/media/align-center.f9afebbb6ae4c2964aa7cb35a8eb0d9d.svg",
+    "static/media/align-right.svg": "/static/media/align-right.626a3d25131f64ad41bfff6ad1ef10f5.svg",
+    "static/media/align-left.svg": "/static/media/align-left.0f8ad7994ca19d6495042555af243eef.svg",
+    "main.e67162db.css.map": "/static/css/main.e67162db.css.map",
+    "main.48c69e52.js.map": "/static/js/main.48c69e52.js.map",
+    "453.3dfd749f.chunk.js.map": "/static/js/453.3dfd749f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e67162db.css",
+    "static/js/main.48c69e52.js"
+  ]
+}
